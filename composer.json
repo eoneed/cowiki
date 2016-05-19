@@ -4,7 +4,7 @@
     "license": "GPL-3.0",
     "authors": [
         {"name": "Daniel T. Gorski"},
-        {"name": "Alexander Klein"}
+        {"name": "Alexander Klein", "email": "a.klein@eoneed.org"}
     ],
     "require": {
         "php": "^5.5"
