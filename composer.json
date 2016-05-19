@@ -2,6 +2,10 @@
 {
     "name": "eoneed/cowiki",
     "license": "GPL-3.0",
+    "authors": [
+        {"name": "Daniel T. Gorski"},
+        {"name": "Alexander Klein"}
+    ],
     "require": {
         "php": "^5.5"
     },
