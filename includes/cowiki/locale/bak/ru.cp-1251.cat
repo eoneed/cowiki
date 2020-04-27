@@ -1,0 +1,277 @@
+<?php
+
+/*
+
+    Copyright (C) Daniel T. Gorski, <daniel.gorski@develnet.org>
+
+    $Id: ru.cp-1251.cat,v 1.5 2005/01/30 21:27:11 dgorski Exp $
+
+    This file is part of coWiki. coWiki is free software under the terms of
+    the GNU General Public License (GPL). Read the LICENSE file. If you did
+    not receive a copy of the license and are not able to obtain it through
+    the internet, please send a note to <license@cowiki.org> so we can mail
+    you a copy immediately.
+
+    @purpose:   This is a language catalog file for i18n
+    @language:  Russian (windows-1251)
+    @comments:  none
+    @date:      10. November 2003
+    @author:    Alexander Vasiliev <vasiliev@stw-bonn.de>
+
+*/
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CHARSET']      = 'windows-1251';
+    $__['I18N_LOCALES']      = 'ru_RU, ru';
+    $__['I18N_DIRECTION']    = 'ltr';
+    $__['I18N_DATE_FORMAT']  = '%d %b %y';
+    $__['I18N_TIME_FORMAT']  = '%H:%M';
+    $__['I18N_TODAY']        = 'сегодня';
+    $__['I18N_YESTERDAY']    = 'вчера';
+    $__['I18N_PROCESSED_IN'] = 'Обработано за %s сек.';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_YES']                 = 'Да';
+    $__['I18N_NO']                  = 'Нет';
+    $__['I18N_OK']                  = 'OK';
+    $__['I18N_UP']                  = 'Вверх';
+    $__['I18N_DOWN']                = 'Вниз';
+    $__['I18N_LEFT']                = 'Влево';
+    $__['I18N_RIGHT']               = 'Вправо';
+    $__['I18N_PREV']                = 'Предыдущее';
+    $__['I18N_NEXT']                = 'Следующее';
+    $__['I18N_SAVE']                = 'Сохранить';
+    $__['I18N_DELETE']              = 'Удалить';
+    $__['I18N_CANCEL']              = 'Отменить';
+    $__['I18N_EDIT']                = 'Редактировать';
+    $__['I18N_CHANGE']              = 'Изменить';
+    $__['I18N_SELECT_ALL']          = 'Выбрать все';
+    $__['I18N_RANGE']               = 'Раздел';
+    $__['I18N_REVERSE']             = 'В обратном порядке';
+    $__['I18N_MOVE']                = 'Преместить';
+    $__['I18N_SEND']                = 'Отослать';
+    $__['I18N_UPLOAD']              = 'Загрузить';
+    $__['I18N_SHOW']                = 'Показать';
+    $__['I18N_CLOSE']               = 'Закрыть';
+    $__['I18N_RESET']               = 'Сбросить';
+    $__['I18N_SEARCH']              = 'Поиск';
+    $__['I18N_MORE']                = 'Больше';
+    $__['I18N_SEARCH_RESULT']       = 'Результат поиска';
+    $__['I18N_SEARCH_RESULT_FOR']   = 'Результат поиска для';
+    $__['I18N_SEARCH_MATCHES']      = '%s результатов поиска';
+    $__['I18N_SEARCH_NO_RESULT']    = 'Ничего не найдено';
+    $__['I18N_JOIN']                = 'Вступить';
+    $__['I18N_REGISTER']            = 'Регистрация';
+    $__['I18N_HELP']                = 'Помощь';
+    $__['I18N_PREVIEW']             = 'Предпросмотр';
+    $__['I18N_MANDANTORY']          = 'Обязательо';
+    $__['I18N_ACCESS']              = 'Доступ';
+    $__['I18N_CREATED']             = 'cоздано';
+    $__['I18N_MODIFIED']            = 'изменено';
+    $__['I18N_MODIFIED_BY']         = 'кем изменено:';
+    $__['I18N_DELETED']             = 'удалено';
+    $__['I18N_OWNERSHIP']           = 'Cобственность';
+    $__['I18N_LOGIN']               = 'Логин';
+    $__['I18N_LOGOUT']              = 'Покинуть';
+    $__['I18N_PASSWORD']            = 'Пароль';
+    $__['I18N_PASSWORD_IS_CRYPTED'] = 'Password already encrypted';
+    $__['I18N_NAME']                = 'Имя';
+    $__['I18N_DESCRIPTION']         = 'Описание';
+    $__['I18N_EMAIL']               = 'Эл.почта';
+    $__['I18N_ACTIVE']              = 'Активный';
+    $__['I18N_LOCKED']              = 'недоступно';
+    $__['I18N_EXPIRES']             = 'действительно до';
+    $__['I18N_DATE']                = 'Дата';
+    $__['I18N_TIME']                = 'Время';
+    $__['I18N_SORT']                = 'Сорт.';
+    $__['I18N_ORDER']               = 'Последовательность';
+    $__['I18N_REPLY']               = 'Ответ';
+    $__['I18N_REPLIES']             = 'Ответы';
+    $__['I18N_ERROR_STATUS']        = 'Статус';
+    $__['I18N_EMPTY_DIR']           = 'пустая директория';
+    $__['I18N_PRINT_VERSION']       = 'Для печати';
+    $__['I18N_ADMINISTRATION']      = 'Администрация';
+    $__['I18N_OPTIONS']             = 'Опции';
+    $__['I18N_PREFERENCES']         = 'Конфигурация';
+    $__['I18N_COOKIES_REQUIRED']    = 'Необходима поддержка Cookies';
+    $__['I18N_LINKS']               = 'Линки';
+    $__['I18N_DOCUMENT_URL']        = 'Линк';
+    $__['I18N_REFERENCE']           = 'Референция';
+    $__['I18N_RECORD_DATA']         = 'Ссылка';
+    $__['I18N_AMBI_RESULT']         = 'многозначный результат';
+    $__['I18N_SIMI']                = 'Сходные результаты';
+    $__['I18N_SIMI_RESULT']         = 'Сходные результаты';
+    $__['I18N_REVISION']            = 'Рев.';
+    $__['I18N_HOST']                = 'Хост';
+    $__['I18N_IP']                  = 'IP';
+    $__['I18N_EDIT']                = 'Обработать';
+    $__['I18N_DOC_NEW']             = 'Новый документ';
+    $__['I18N_DOC_VIEW']            = 'Просмотр документа';
+    $__['I18N_DIR_NEW']             = 'Новая директория';
+    $__['I18N_DIR_LIST']            = 'Показать директории';
+    $__['I18N_DIR_VIEW']            = 'Просмотр директории';
+    $__['I18N_DIR_INDEX']           = 'Показать index';
+    $__['I18N_USER_NEW']            = 'Новый пользователь';
+    $__['I18N_GROUP_NEW']           = 'Новая группа';
+    $__['I18N_ADMIN']               = 'Админимстратор';
+    $__['I18N_BACK']                = 'Назад';
+    $__['I18N_XML_SHOW']            = 'XML';
+    $__['I18N_HISTORY']             = 'История';
+    $__['I18N_VIEW']                = 'Показать';
+    $__['I18N_VIEWS']               = 'показано';
+    $__['I18N_COMPARE']             = 'Сравнить';
+    $__['I18N_COMPARISON']          = 'Сравнение';
+    $__['I18N_OLD']                 = 'Старые';
+    $__['I18N_DIFF']                = 'Различия';
+    $__['I18N_LEGEND']              = 'Легенда';
+    $__['I18N_CHANGED']             = 'изменено';
+    $__['I18N_ADDED']               = 'добавить';
+    $__['I18N_REMOVED']             = 'удалено';
+    $__['I18N_RECOVER']             = 'восстановить';
+    $__['I18N_IDENTICAL']           = 'идентично';
+    $__['I18N_DOC']                 = 'Документ';
+    $__['I18N_DIR']                 = 'Директория';
+    $__['I18N_CURRENT']             = 'Текущий';
+    $__['I18N_PARAMETER']           = 'Параметр';
+    $__['I18N_AVAIL_PLUGIN']        = 'Доступные Plugins';
+    $__['I18N_TEMPLATE']            = 'Шаблон';
+    $__['I18N_LANGUAGE']            = 'Язык';
+    $__['I18N_FONT_FAMILY']         = 'Шрифт';
+    $__['I18N_FONT_SIZE']           = 'Размер шрифта';
+    $__['I18N_FONT_ALIGN']          = 'Расположение текста';
+    $__['I18N_FONT_ALIGN_NORMAL']   = 'Нормальный';
+    $__['I18N_FONT_ALIGN_JUSTIFY']  = 'Абзатц';
+    $__['I18N_SUBJECT']             = 'Тема';
+    $__['I18N_FROM']                = 'От';
+    $__['I18N_CONTENT']             = 'Содержание';
+    $__['I18N_MEDIACENTER']         = 'Медиацентр';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_USER']          = 'Пользователь';
+    $__['I18N_GROUP']         = 'Группа';
+    $__['I18N_WORLD']         = 'Прочие';
+    $__['I18N_ACCESS_READ']   = 'Чтение';
+    $__['I18N_ACCESS_WRITE']  = 'Запись';
+    $__['I18N_ACCESS_EXEC']   = 'Войти';
+    $__['I18N_USER_ID']       = 'ID пользователя';
+    $__['I18N_GROUP_DEFAULT'] = 'Стандартная группа';
+    $__['I18N_GROUP_MEMBER']  = 'Дополнительная группа';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CURRENT_USER']   = 'Текущий пользователь';
+    $__['I18N_ROOT_FULLNAME']  = 'coWiki Администратор';
+    $__['I18N_GUEST_FULLNAME'] = 'Гость';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_COM_THREADS']           = 'Темы';
+    $__['I18N_COM_COMMENTS']          = 'Комментарии';
+    $__['I18N_COM_COMMENT']           = 'Комметнарии';
+    $__['I18N_COM_COMMENT_VIEW']      = 'Показать коментарий';
+    $__['I18N_COM_COMMENT_WRITE']     = 'Прокомментировать';
+    $__['I18N_COM_ATTRIBUTION']       = '%s %s писал(а)';
+    $__['I18N_COM_HEAD_CREATE_EDIT']  = 'Твой комментарий';
+    $__['I18N_COM_IF_ANSWER_NOTIFY']  = 'Оповестить при ответет';
+    $__['I18N_COM_PREV_THREAD']       = 'Предыдущая тема';
+    $__['I18N_COM_NEXT_THREAD']       = 'Следующая тема';
+    $__['I18N_COM_PREV_POSTING']      = 'Предыдущий отправление';
+    $__['I18N_COM_NEXT_POSTING']      = 'Следующий Отправление';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_SHOUTBOX'] = 'Shoutbox';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DOC_TOKEN']                    = '';
+    $__['I18N_DOC_CREATED']                  = 'создано';
+    $__['I18N_DOC_CHANGED']                  = 'изменено';
+    $__['I18N_DOC_DELETED_DOCUMENT']         = 'удалённый документ';
+    $__['I18N_DOC_UNRESOLVED_WEB_REFERENCE'] = 'Недоступный линк';
+    $__['I18N_DOC_HEAD_CREATE_EDIT']         = 'Создать или обработать документ ...';
+    $__['I18N_DOC_HEAD_DELETE']              = 'Удалить документ ...';
+    $__['I18N_DOC_HEAD_RECOVER']             = 'Восстановить документ ...';
+    $__['I18N_DOC_KEYWORDS']                 = 'Ключевые слова';
+    $__['I18N_DOC_MINOR_CHANGE']             = 'Незначительные изменения';
+    $__['I18N_DOC_ALLOW_COMMENTS']           = 'Комментируемый'; #Kommentierbar
+    $__['I18N_DOC_IF_CHANGED_NOTIFY']        = 'Уведомлять при изменениях';
+    $__['I18N_DOC_CONFIRM_DELETE']           = 'Удалить документ &quot;<strong>%s</strong>&quot;';
+
+    $__['I18N_DOC_HIST_HEAD']                = 'Предшествующие документы ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DIR_TOKEN']              = '[Директория]';
+    $__['I18N_DIR_SELF']               = 'Актуальная директория';
+    $__['I18N_DIR_PARENT']             = 'Вышележащая директория';
+    $__['I18N_DIR_CONTENT_OF']         = 'Содержание &quot;%s&quot;';
+    $__['I18N_DIR_HEAD_CREATE_EDIT']   = 'Создать или обработать директорию ...';
+    $__['I18N_DIR_HEAD_SELECTED_MOVE'] = 'Выбранные эдементы преместить в ...';
+    $__['I18N_DIR_HEAD_DELETE']        = 'Удалить директорию ...';
+    $__['I18N_DIR_IS_INDEX']           = 'Index';
+    $__['I18N_DIR_NO_INDEX']           = 'index отсутствует';
+    $__['I18N_DIR_IN_MENU']            = 'Меню';
+    $__['I18N_DIR_IN_FOOTER']          = 'Нижняя часть документа';
+    $__['I18N_DIR_WITH_SELECTED']      = 'Выбор';
+    $__['I18N_DIR_CONFIRM_DELETE']     = 'Уудалить директорию &quot;<strong>%s</strong>&quot;';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_AUTH_HEAD_CHANGE'] = 'Сменить пользователя ...';
+    $__['I18N_AUTH_LOGIN_NAME']  = 'Логин';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_ADMIN_MENU_LABEL_SETUP']     = 'Установки';
+    $__['I18N_ADMIN_MENU_LABEL_STRUCT']    = 'Структура';
+    $__['I18N_ADMIN_MENU_LABEL_USER']      = 'Управление пользователями';
+    $__['I18N_ADMIN_MENU_LABEL_GROUP']     = 'Управление группами';
+    $__['I18N_ADMIN_MENU_LABEL_CACHE']     = 'Удалить кэш';
+    $__['I18N_ADMIN_MENU_LABEL_UPDATE']    = 'Актуализировать пакет';
+    $__['I18N_ADMIN_MENU_LABEL_FORUM']     = 'Админимстрировать форум';
+    $__['I18N_ADMIN_MENU_LABEL_TRASH']     = 'Корзина';
+    $__['I18N_ADMIN_MENU_LABEL_EXIT']      = 'Прекратить администрирование';
+
+    $__['I18N_ADMIN_WEB_HEAD_MANAGE']      = 'Управление каталогом вебдиректорий ...';
+    $__['I18N_ADMIN_WEB_HEAD_EDIT']        = 'Создать или обработать директорию ...';
+
+    $__['I18N_ADMIN_USER_HEAD_MANAGE']     = 'Управление пользователями ...';
+    $__['I18N_ADMIN_USER_HEAD_EDIT']       = 'Создать или изменить пользователя ...';
+    $__['I18N_ADMIN_USER_HEAD_DELETE']     = 'Удалить пользователя ...';
+    $__['I18N_ADMIN_USER_CONFIRM_DELETE']  = 'Удалить польователя &quot;<strong>%s</strong>&quot; (uid %s) ?';
+
+    $__['I18N_ADMIN_GROUP_HEAD_MANAGE']    = 'Администрировать группу пользователей ...';
+    $__['I18N_ADMIN_GROUP_HEAD_EDIT']      = 'Добавить или изменить группу пользователей ...';
+    $__['I18N_ADMIN_GROUP_HEAD_DELETE']    = 'Удалить группу пользователей ...';
+    $__['I18N_ADMIN_GROUP_CONFIRM_DELETE'] = 'Удалить группу пользователей &quot;<strong>%s</strong>&quot; (gid %s) ?';
+
+    $__['I18N_ADMIN_CACHE_HEAD_MANAGE']    = 'Управлять кэшем ...';
+    $__['I18N_ADMIN_CACHE_HEAD_DELETE']    = 'Удалить кэш ...';
+    $__['I18N_ADMIN_CACHE_CONFIRM_DELETE'] = 'Желаете стереть кэш?';
+
+    $__['I18N_ADMIN_FORUM_HEAD_MANAGE']    = 'Администрировать форум ...';
+    $__['I18N_ADMIN_FORUM_HEAD_EDIT']      = 'Создать или обработать форум ...';
+
+    $__['I18N_ADMIN_TRASH_HEAD_MANAGE']    = 'Обработка стёртых файлов ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FILENAME']      = 'Название';
+    $__['I18N_LAST_MODIFIED'] = 'в последний раз изменён';
+    $__['I18N_FILESIZE']      = 'Размер';
+    $__['I18N_BYTES']         = 'Байт';
+    $__['I18N_KILOBYTES']     = 'Килобайт';
+    $__['I18N_MEGABYTES']     = 'Мегабайт';
+    $__['I18N_GIGABYTES']     = 'Гигабайт';
+    $__['I18N_TERABYTES']     = 'Терабайт';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FRONT_USER_HEAD_DETAILS']     = 'Изменить данные пользователя ...';
+    $__['I18N_DETAILS']                     = 'Детали';
+    $__['I18N_LEAVE_BLANK_UNLESS_CHANGING'] = 'оставить пустым не изменяя содержания';
+?>

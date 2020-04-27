@@ -1,0 +1,253 @@
+This file is for developers. If you are interested in the code base, you
+will find the CVS repository as announced on <http://www.cowiki.org/>.
+
+To keep in contact with the developers, join the developer mailing list
+that is announced on <http://www.cowiki.org/>.
+
+$Id: README.PLUGIN,v 1.2 2005/01/16 23:56:00 dgorski Exp $
+
+---------------------------------------------------------------------------
+
+Coding guidelines for plugins and the coWiki core:
+  
+  * Basics
+  * Coding style
+  * Plugin classes naming schema
+  * Variable naming schema
+      * Objects
+      * Strings
+      * Integers
+      * Arrays
+      * Booleans
+  * Encapsulation
+  * Error handling
+  * Testing
+  * Assume no prerequisites
+  * What plugins could do
+  * What plugins should do
+  * Plugin distribution
+
+Adopt the rules. Do not screw up the concept by bypassing them.
+Please refer to the Requirements for the supported PHP/RDBMS version.
+
+Basics
+------
+
+  * Plugin classes must:
+        o inherit from the AbstractPlugin class
+        o have public init() and perform() methods implemented
+
+  * A plugin must use full PHP processing instructions
+    (<?php .. ?>) for its PHP code:
+
+    e.g.  <?php code; ?> // is correct
+          <? code; ?>    // in *not* correct
+          <% code; %>    // in *not* correct
+
+  * The plugin code must not use tabs for code separation. Always use
+    four spaces to indent your code.
+
+  * Code lines has to be separated by Unix linefeeds ("\n" resp. 0x0A).
+    Set up your editor to save the files in this format.
+
+  * The plugin code should not exceed ~75 characters per line. Take a
+    look at the core code of this application as an instance of readable
+    code. Nobody wants to see your ">250 chracters per line" code in
+    a 80x40 terminal window.
+
+  * Every plugin must have a detailed description of what it is for, what
+    it does and what data it handles. This description must be english.
+
+Coding style
+------------
+
+  * Do you know the quite tiny book "Elements of Java Style"? No? Really?
+    Then do me the favour and buy it, its cheap and it will show you how
+    to write your object oriented code in a clean way :). 120 pages of
+    how your code could look like. It has almost nothing in common with
+    PHP, but with the coWiki base and its source.
+
+Plugin classes naming schema
+----------------------------
+
+  class.[Custom|Private]PluginName.php
+
+  e.g.
+     class.PrivateStatsDisplay.php   or
+     class.CustomSomeThing.php       or
+     class.CustomYourPluginName.php
+
+Variable naming schema
+----------------------
+
+  Even if you are used to an other programming style, use this variable
+  naming scheme if you want to extend coWiki - keep it homogeneous. The
+  basic scheme is the CamelCase scheme where new words are indicated by
+  a capital letter. Additionally most variables are prefixed by a letter
+  to conclude their type.
+
+  * Objects
+      Variables representing objects are written with a capital letter at
+      the beginning. E.g.
+
+        $Item = new DocumentItem();
+
+  * Strings
+      Variables representing strings are prefixed by an small "s" and
+      followed by a capital letter.
+
+        $sStr = 'some string';
+
+  * Integers
+      Variables representing integers are prefixed by an small "n" (for
+      number) and followed by a capital letter.
+
+        $nInt = 42;
+
+  * Arrays
+      Variables representing arrays are prefixed by an small "a" and
+      followed by a capital letter.
+
+        $aData = array('foo', 'bar');
+
+  * Booleans
+      Variables representing boolean values are prefixed by an small "b"
+      and followed by a capital letter.
+
+        $bFlag = true;
+
+Encapsulation
+-------------
+
+  * Encapsulation of your plugin is the most important issue! The plugin
+    code itself must not change or manipulate any variables. It must not
+    access the $_GET, $_POST, $GLOBALS etc. arrays or the getenv()/putenv()
+    functions for reading nor writing! coWiki provides an API for these
+    cases: the RuntimeContext or "Context" for short.
+
+        * All data from outside world must be accessed through an instance
+          of this interface. This is the one and only way for you to gain
+          access to the outside variable scope.
+
+        * The base AbstractPlugin class provides the instance of the
+          RuntimeContext in the protected member variable $Context.
+          You will obtain it by using
+
+            $foo = $this->Context->someContextMethod();
+
+          in your plugin code.
+
+        * Do not try to create a new context with $foo = new ..., this
+          will not work. Have a look at the SKEL.PLUGIN file.
+
+  * If the RuntimeContext has not enough capabilities for your plugin,
+    please send an email to the developers and it will be hopefully
+    enhanced in an upcoming version.
+
+Error handling
+--------------
+
+    * A plugin script must expect the error reporting level set to E_ALL.
+      This means ALL errors, warnings and notices must be handled by the
+      plugin itself. See next topic also:
+
+    * Check all of your variables if they are set:
+
+        if (isset($myVar)) {
+            ...
+        }
+
+      before your access them - it is a must-be. Any undefined variables
+      coming from any objects (e.g. Request or Registry) are always set
+      and initialized with null.
+
+    * A coWiki plugin must not rely on any extensions compiled or linked
+      into PHP (such as LDAP, IMAP, XML, Shared Memory functions etc.).
+      A plugin must ask the RuntimeContext before it is going to use them.
+      If it is not possible, you may contact the developers and/or should
+      use the context error handler:
+    
+      In case of a recoverable error:
+      
+        $this->Context->addError(<status number>);
+        $this->Context->resume();
+      
+      In case of a fatal error (this will stop the whole application!):
+      
+        $this->Context->addError(<status number>);
+        $this->Context->terminate();
+
+Testing
+-------
+
+    * After testing your own plugin, import/load it (e.g.
+      with <plugin your.plugin.name> or <plugin YourPluginName>) multiple
+      times in the same document or template - if you do not see errors
+      and it works, it should be fine. Watch your httpd log.
+
+      Attention: with the <plugin ...>-command you are able to import
+      plugins with the "custom"-prefix. You can not load "private" plugins
+      in a document. If you want to test your "private" plugins, call them
+      directly from your HTML-template:
+    
+      e.g.
+        You can call "private"- or "custom"-plugins in a HTML-template with:
+      
+          {plugin PrivateStatsDisplay}     or
+          {plugin CustomYourPluginName}    or
+          {plugin custom.your.plugin.name}
+      
+        In a coWiki document your are only able to call a "custom" plugin
+        with:
+      
+          <plugin your.plugin.name> or
+          <plugin YourPluginName>
+      
+        In the <plugin>-case the "custom"-prefix is added automagically.
+
+    As you can see, the ".php" suffix must be omitted. The names of the
+    plugins are not casesensitive.
+
+Assume no prerequisites
+-----------------------
+
+    * A plugin must not rely either on if the application is running as
+      DSO or CGI nor the operating system nor configuration issues like
+      standard paths (/tmp/) etc. The plugin has to ask the RuntimeContext
+      for the proper value.
+
+    * Any output of the plugin (template) must be valid HTML
+      (4.0 Transitional)
+
+    * A plugin (template) must not rely on a specific browser generation
+      or version. Keep your HTML simple.
+
+What plugins could do
+---------------------
+
+    * A plugin may cache its data. Please refer to the cache methods
+      of the RuntimeContext.
+
+    * If the plugin handles coWiki cache it should do it wise.
+      E.g. it is nonsense to grep all news from slashdot.org at every
+      request. The plugin may read the slashdot.org topics maybe every
+      hour and cache it for forthcoming requests.
+
+    * A plugin function could send HTTP headers like
+      header('Location: http://FQDN'); or set a cookie. You must use
+      methods from the RuntimeContext to achieve this.
+
+What plugins should do
+----------------------
+
+    * Last but not least: this is not a rule, but try to get your code to
+      run as fast as possible ;) Your users will gratefully acknowledge that.
+
+Plugin distribution
+-------------------
+
+    * If you wrote a useful and clean plugin and want to publish it,
+      please contact the developer mailinglist (see top of this file), so
+      we can put it into our plugin pool and bundle it with the next coWiki
+      release.
+

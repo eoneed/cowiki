@@ -1,0 +1,108 @@
+<?php
+
+/**
+ *
+ * $Id: SKEL.PLUGIN,v 1.11 2005/02/22 03:25:07 dgorski Exp $
+ *
+ * This file is part of coWiki. coWiki is free software under the terms of
+ * the GNU General Public License (GPL). Read the LICENSE file. If you did
+ * not receive a copy of the license and are not able to obtain it through
+ * the internet, please send a note to <license@cowiki.org> so we can mail
+ * you a copy immediately.
+ *
+ * <pre>
+ * #name:      [NAME OF THIS PLUGIN WITHOUT SUFFIX]
+ * #purpose:   [PURPOSE IF THIS PLUGIN ...
+ *                  WHAT IS IS GOOD FOR?
+ *                  WHAT DOES IT DO?]
+ * #param:     [FIRST PLUGIN PARAMETER]
+ * #param:     [SECOND PLUGIN PARAMETER]
+ * #param:     [THIRD PLUGIN PARAMETER] ... etc.
+ * #caching:   [DOES THIS PLUGIN CACHE ITS DATA? HOW?]
+ * #comment:   [YOUR PERSONAL COMMENTS ON THIS PLUGIN]
+ * #version:   [VERSION OF THIS PLUGIN. PLEASE START WITH 1.0]
+ * #date:      [DATE OF CREATION]
+ * #author:    [YOUR NAME] <[YOUR EMAIL]>
+ *
+ * Please read and understand the README.PLUGIN file before you touch
+ * something here.
+ * </pre>
+ *
+ * @package     plugin
+ * @subpackage  custom
+ * @access      public
+ *
+ * @author      [YOUR NAME] <[YOUR EMAIL]>
+ * @copyright   (C) [YOUR NAME] {@link http://[YOUR HOME]}
+ * @license     http://www.gnu.org/licenses/gpl.html
+ * @version     $Revision: 1.11 $
+ *
+ */
+
+/**
+ * [PURPOSE OF THIS PLUGIN]
+ *
+ * @package     plugin
+ * @subpackage  custom
+ * @access      public
+ *
+ * @author      [YOUR NAME] <[YOUR EMAIL]>
+ * @since       [VERSION OF COWIKI E.G. coWiki 0.3.0]
+ */
+class Custom[YOUR PLUGIN NAME] extends AbstractPlugin {
+
+    // Put in the interface version the plugin works with.
+    // This has nothing to do with the @version of this plugin!
+    const REQUIRED_INTERFACE_VERSION = 1;
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Initialize the plugin and check the interface version. This method
+     * is used by the PluginLoader only.
+     *
+     * @access  public
+     * @return  boolean   true if initialization successful,
+     *                    false otherwise
+     *
+     * @author  [YOUR NAME] <[YOUR EMAIL]>
+     * @since   [VERSION OF COWIKI E.G. coWiki 0.3.0]
+     */
+    public function init() {
+        return parent::init(self::REQUIRED_INTERFACE_VERSION);
+    }
+
+    // --------------------------------------------------------------------
+
+    /**
+     * Perform the plugin purpose. This is the main method of the plugin.
+     *
+     * @access  public
+     * @return  void
+     *
+     * @author  [YOUR NAME] <[YOUR EMAIL]>
+     * @since   [VERSION OF COWIKI E.G. coWiki 0.3.0]
+     */
+    public function perform() {
+
+        /*
+           Your divine code starts here ...
+           .
+           .
+           .
+
+           Example of how to get the registry object:
+        */
+
+        // Get registry object
+        $Registry = $this->Context->getRegistry();
+
+        // ---
+
+        echo 'My plugin works!';
+
+    }
+
+} // of plugin component
+
+?>

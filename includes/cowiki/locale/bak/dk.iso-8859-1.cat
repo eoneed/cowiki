@@ -1,0 +1,278 @@
+<?php
+
+/*
+
+    Copyright (C) Daniel T. Gorski, <daniel.gorski@develnet.org>
+
+    $Id: dk.iso-8859-1.cat,v 1.5 2005/01/30 21:27:11 dgorski Exp $
+
+    This file is part of coWiki. coWiki is free software under the terms of
+    the GNU General Public License (GPL). Read the LICENSE file. If you did
+    not receive a copy of the license and are not able to obtain it through
+    the internet, please send a note to <license@cowiki.org> so we can mail
+    you a copy immediately.
+
+    @purpose:   This is a language catalog file for i18n
+    @language:  Danish
+    @comments:  none
+    @date:      11. October 2002
+    @author:    Ole Hansen, <oha@kmd.dk>
+
+*/
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CHARSET']      = 'ISO-8859-15';
+    $__['I18N_LOCALES']      = 'da_DK, da';
+    $__['I18N_DIRECTION']    = 'ltr';
+    $__['I18N_DATE_FORMAT']  = '%d %b %y';
+    $__['I18N_TIME_FORMAT']  = '%H:%M';
+    $__['I18N_TODAY']        = 'i dag';
+    $__['I18N_YESTERDAY']    = 'i går';
+    $__['I18N_PROCESSED_IN'] = 'Behandlet på %s sekunder';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_YES']                 = 'Ja';
+    $__['I18N_NO']                  = 'Nej';
+    $__['I18N_OK']                  = 'OK';
+    $__['I18N_UP']                  = 'Op';
+    $__['I18N_DOWN']                = 'Ned';
+    $__['I18N_LEFT']                = 'Venstre';
+    $__['I18N_RIGHT']               = 'Højre';
+    $__['I18N_PREV']                = 'Forrige';
+    $__['I18N_NEXT']                = 'Næste';
+    $__['I18N_SAVE']                = 'Gem';
+    $__['I18N_DELETE']              = 'Slet';
+    $__['I18N_CANCEL']              = 'Anuller';
+    $__['I18N_EDIT']                = 'Rediger';
+    $__['I18N_CHANGE']              = 'Skift';
+    $__['I18N_SELECT_ALL']          = 'Vælg alle';
+    $__['I18N_RANGE']               = 'Interval';
+    $__['I18N_REVERSE']             = 'Baglæns';
+    $__['I18N_MOVE']                = 'Flyt';
+    $__['I18N_SEND']                = 'Send';
+    $__['I18N_UPLOAD']              = 'Upload';
+    $__['I18N_SHOW']                = 'Vis';
+    $__['I18N_CLOSE']               = 'Luk';
+    $__['I18N_RESET']               = 'Nulstil';
+    $__['I18N_SEARCH']              = 'Søg';
+    $__['I18N_MORE']                = 'Mere';
+    $__['I18N_SEARCH_RESULT']       = 'Søgeresultat';
+    $__['I18N_SEARCH_RESULT_FOR']   = 'Søgeresultat for';
+    $__['I18N_SEARCH_MATCHES']      = '%s fundne';
+    $__['I18N_SEARCH_NO_RESULT']    = 'Intet fundet';
+    $__['I18N_JOIN']                = 'Sammenføj';
+    $__['I18N_REGISTER']            = 'Registrer';
+    $__['I18N_HELP']                = 'Hjælp';
+    $__['I18N_PREVIEW']             = 'Forhåndsvisning';
+    $__['I18N_MANDANTORY']          = 'Obligatorisk';
+    $__['I18N_ACCESS']              = 'Adgang';
+    $__['I18N_CREATED']             = 'Oprettet';
+    $__['I18N_MODIFIED']            = 'Ændret';
+    $__['I18N_MODIFIED_BY']         = 'Ændret af';
+    $__['I18N_DELETED']             = 'Slettet';
+    $__['I18N_OWNERSHIP']           = 'Ejerskab';
+    $__['I18N_LOGIN']               = 'Log ind';
+    $__['I18N_LOGOUT']              = 'Log ud';
+    $__['I18N_PASSWORD']            = 'Adgangskode';
+    $__['I18N_PASSWORD_IS_CRYPTED'] = 'Password already encrypted';
+    $__['I18N_NAME']                = 'Navn';
+    $__['I18N_DESCRIPTION']         = 'Beskrivelse';
+    $__['I18N_EMAIL']               = 'Email';
+    $__['I18N_ACTIVE']              = 'Aktiv';
+    $__['I18N_LOCKED']              = 'Låst';
+    $__['I18N_EXPIRES']             = 'Udløber';
+    $__['I18N_DATE']                = 'Dato';
+    $__['I18N_TIME']                = 'Tid';
+    $__['I18N_SORT']                = 'Sorter';
+    $__['I18N_ORDER']               = 'Rækkefølge';
+    $__['I18N_REPLY']               = 'Svar';
+    $__['I18N_REPLIES']             = 'Svar';
+    $__['I18N_ERROR_STATUS']        = 'Status';
+    $__['I18N_EMPTY_DIR']           = 'Tom mappe';
+    $__['I18N_PRINT_VERSION']       = 'Vis udskrift';
+    $__['I18N_ADMINISTRATION']      = 'Administration';
+    $__['I18N_OPTIONS']             = 'Muligheder';
+    $__['I18N_PREFERENCES']         = 'Indstillinger';
+    $__['I18N_COOKIES_REQUIRED']    = 'Vedvarende cookie påkrævet';
+    $__['I18N_LINKS']               = 'Lænker';
+    $__['I18N_DOCUMENT_URL']        = 'Dette dokuments URL';
+    $__['I18N_REFERENCE']           = 'Henvisning';
+    $__['I18N_RECORD_DATA']         = 'Record data';
+    $__['I18N_AMBI_RESULT']         = 'Ugyldigt resultat';
+    $__['I18N_SIMI']                = 'Lignende sider';
+    $__['I18N_SIMI_RESULT']         = 'Lignende resultater';
+    $__['I18N_REVISION']            = 'Rev.';
+    $__['I18N_HOST']                = 'Vært';
+    $__['I18N_IP']                  = 'IP';
+    $__['I18N_EDIT']                = 'Rediger';
+    $__['I18N_DOC_NEW']             = 'Nyt dokument';
+    $__['I18N_DOC_VIEW']            = 'Vis dokument';
+    $__['I18N_DIR_NEW']             = 'Ny mappe';
+    $__['I18N_DIR_LIST']            = 'Mappeoversigt';
+    $__['I18N_DIR_VIEW']            = 'Katalogvisning';
+    $__['I18N_DIR_INDEX']           = 'Vis indeks';
+    $__['I18N_USER_NEW']            = 'Ny bruger';
+    $__['I18N_GROUP_NEW']           = 'Ny gruppe';
+    $__['I18N_ADMIN']               = 'Administrer';
+    $__['I18N_BACK']                = 'Tilbage';
+    $__['I18N_XML_SHOW']            = 'Vis XML';
+    $__['I18N_HISTORY']             = 'Historik';
+    $__['I18N_VIEW']                = 'Vis';
+    $__['I18N_VIEWS']               = 'Visninger';
+    $__['I18N_COMPARE']             = 'Sammenlign';
+    $__['I18N_COMPARISON']          = 'Sammenligning';
+    $__['I18N_OLD']                 = 'Gammel';
+    $__['I18N_DIFF']                = 'Ændringer';
+    $__['I18N_LEGEND']              = 'Beskrivelse';
+    $__['I18N_CHANGED']             = 'Ændret';
+    $__['I18N_ADDED']               = 'Tilføjet';
+    $__['I18N_REMOVED']             = 'Fjernet';
+    $__['I18N_RECOVER']             = 'Genskab';
+    $__['I18N_IDENTICAL']           = 'Identisk';
+    $__['I18N_DOC']                 = 'Dokument';
+    $__['I18N_DIR']                 = 'Mappe';
+    $__['I18N_CURRENT']             = 'Nuværende';
+    $__['I18N_PARAMETER']           = 'Parameter';
+    $__['I18N_AVAIL_PLUGIN']        = 'Tilgængelige udvidelsemoduler';
+    $__['I18N_TEMPLATE']            = 'Skabelon';
+    $__['I18N_LANGUAGE']            = 'Sprog';
+    $__['I18N_FONT_FAMILY']         = 'Skrifttype';
+    $__['I18N_FONT_SIZE']           = 'Skriftsstørrelse';
+    $__['I18N_FONT_ALIGN']          = 'Tekstjustering';
+    $__['I18N_FONT_ALIGN_NORMAL']   = 'Almindelig';
+    $__['I18N_FONT_ALIGN_JUSTIFY']  = 'Lige margener';
+    $__['I18N_SUBJECT']             = 'Emne';
+    $__['I18N_FROM']                = 'Fra';
+    $__['I18N_CONTENT']             = 'Indhold';
+    $__['I18N_MEDIACENTER']         = 'Mediecenter';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_USER']          = 'Bruger';
+    $__['I18N_GROUP']         = 'Gruppe';
+    $__['I18N_WORLD']         = 'Alle';
+    $__['I18N_ACCESS_READ']   = 'Læs';
+    $__['I18N_ACCESS_WRITE']  = 'Skriv';
+    $__['I18N_ACCESS_EXEC']   = 'Mappe';
+    $__['I18N_USER_ID']       = 'Bruger-ID';
+    $__['I18N_GROUP_DEFAULT'] = 'Standardgruppe';
+    $__['I18N_GROUP_MEMBER']  = 'Medlem af grupper';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CURRENT_USER']   = 'Nuværende bruger';
+    $__['I18N_ROOT_FULLNAME']  = 'coWiki Admin';
+    $__['I18N_GUEST_FULLNAME'] = 'Gæst';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_COM_THREADS']           = 'Tråde';
+    $__['I18N_COM_COMMENTS']          = 'Kommentarer';
+    $__['I18N_COM_COMMENT']           = 'Kommentar';
+    $__['I18N_COM_COMMENT_VIEW']      = 'View comments';
+    $__['I18N_COM_COMMENT_WRITE']     = 'Ny kommentar';
+    $__['I18N_COM_ATTRIBUTION']       = 'Den %s, skrev %s:';
+    $__['I18N_COM_HEAD_CREATE_EDIT']  = 'Skriv din kommentar...';
+    $__['I18N_COM_IF_ANSWER_NOTIFY']  = 'Påmind mig når der er svar';
+    $__['I18N_COM_PREV_THREAD']       = 'Forrige tråd';
+    $__['I18N_COM_NEXT_THREAD']       = 'Næste tråd';
+    $__['I18N_COM_PREV_POSTING']      = 'Forrige indlæg';
+    $__['I18N_COM_NEXT_POSTING']      = 'Næste indlæg';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_SHOUTBOX'] = 'Råbekasse! :)';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DOC_TOKEN']                    = '';
+    $__['I18N_DOC_CREATED']                  = 'oprettet';
+    $__['I18N_DOC_CHANGED']                  = 'ændret';
+    $__['I18N_DOC_DELETED_DOCUMENT']         = 'Slettet dokument';
+    $__['I18N_DOC_UNRESOLVED_WEB_REFERENCE'] = 'Unresolved cross web reference';
+    $__['I18N_DOC_HEAD_CREATE_EDIT']         = 'Opret eller rediger et dokument ...';
+    $__['I18N_DOC_HEAD_DELETE']              = 'Slet dokumentet ...';
+    $__['I18N_DOC_HEAD_RECOVER']             = 'Genskab dokumentet ...';
+    $__['I18N_DOC_KEYWORDS']                 = 'Stikord';
+    $__['I18N_DOC_MINOR_CHANGE']             = 'Dette er en mindre ændring';
+    $__['I18N_DOC_ALLOW_COMMENTS']           = 'Tillad kommentarer';
+    $__['I18N_DOC_IF_CHANGED_NOTIFY']        = 'Påmind hvis ændret';
+    $__['I18N_DOC_CONFIRM_DELETE']           = 'Er du sikker på du vil slette dokumentet &quot;<strong>%s</strong>&quot;?';
+
+    $__['I18N_DOC_HIST_HEAD']                = 'Dokumenthistorie ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DIR_TOKEN']              = '[mappe]';
+    $__['I18N_DIR_SELF']               = 'selv';
+    $__['I18N_DIR_PARENT']             = 'forælder';
+    $__['I18N_DIR_CONTENT_OF']         = 'Indholdet af &quot;%s&quot;';
+    $__['I18N_DIR_HEAD_CREATE_EDIT']   = 'Opret eller rediger en mappe ...';
+    $__['I18N_DIR_HEAD_SELECTED_MOVE'] = 'Flyt valgte element ...';
+    $__['I18N_DIR_HEAD_DELETE']        = 'Slet mappen ...';
+    $__['I18N_DIR_IS_INDEX']           = 'Indeks';
+    $__['I18N_DIR_NO_INDEX']           = 'Intet indeks';
+    $__['I18N_DIR_IN_MENU']            = 'Menu';
+    $__['I18N_DIR_IN_FOOTER']          = 'Fodnote';
+    $__['I18N_DIR_WITH_SELECTED']      = 'Med valgte';
+    $__['I18N_DIR_CONFIRM_DELETE']     = 'Er du sikker på du vil slette mappen &quot;<strong>%s</strong>&quot;?';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_AUTH_HEAD_CHANGE'] = 'Skift bruger ...';
+    $__['I18N_AUTH_LOGIN_NAME']  = 'Brugernavn';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_ADMIN_MENU_LABEL_SETUP']     = 'Opstætning';
+    $__['I18N_ADMIN_MENU_LABEL_STRUCT']    = 'Webstruktur';
+    $__['I18N_ADMIN_MENU_LABEL_USER']      = 'Brugerhåndtering';
+    $__['I18N_ADMIN_MENU_LABEL_GROUP']     = 'Gruppehåndtering';
+    $__['I18N_ADMIN_MENU_LABEL_CACHE']     = 'Ryd diskbuffer';
+    $__['I18N_ADMIN_MENU_LABEL_UPDATE']    = 'Software-opdatering';
+    $__['I18N_ADMIN_MENU_LABEL_FORUM']     = 'Forum-vedligeholdelse';
+    $__['I18N_ADMIN_MENU_LABEL_TRASH']     = 'Affaldshåndtering';
+    $__['I18N_ADMIN_MENU_LABEL_EXIT']      = 'Afslut administration';
+
+    $__['I18N_ADMIN_WEB_HEAD_MANAGE']      = 'Håndter web-mappestruktur ...';
+    $__['I18N_ADMIN_WEB_HEAD_EDIT']        = 'Opret eller rediger en web-mappe ...';
+
+    $__['I18N_ADMIN_USER_HEAD_MANAGE']     = 'Håndter bruger ...';
+    $__['I18N_ADMIN_USER_HEAD_EDIT']       = 'Opret eller rediger en bruger ...';
+    $__['I18N_ADMIN_USER_HEAD_DELETE']     = 'Slet bruger ...';
+    $__['I18N_ADMIN_USER_CONFIRM_DELETE']  = 'Er du sikker på, du vil slette brugeren &quot;<strong>%s</strong>&quot; (brugerid %s)?';
+
+    $__['I18N_ADMIN_GROUP_HEAD_MANAGE']    = 'Håndter brugergrupper ...';
+    $__['I18N_ADMIN_GROUP_HEAD_EDIT']      = 'Opret eller rediger en brugergruppe ...';
+    $__['I18N_ADMIN_GROUP_HEAD_DELETE']    = 'Slet brugergruppe ...';
+    $__['I18N_ADMIN_GROUP_CONFIRM_DELETE'] = 'Er du sikker på, du vil slette brugergruppen &quot;<strong>%s</strong>&quot; (gruppeid %s)?';
+
+    $__['I18N_ADMIN_CACHE_HEAD_MANAGE']    = 'Håndter buffer ...';
+    $__['I18N_ADMIN_CACHE_HEAD_DELETE']    = 'Slet buffer ...';
+    $__['I18N_ADMIN_CACHE_CONFIRM_DELETE'] = 'Er du sikker på, du vil slette bufferen? Bufferen vil blive gendannet.';
+
+    $__['I18N_ADMIN_FORUM_HEAD_MANAGE']    = 'Håndter fora ...';
+    $__['I18N_ADMIN_FORUM_HEAD_EDIT']      = 'Opret eller rediger et forum ...';
+
+    $__['I18N_ADMIN_TRASH_HEAD_MANAGE']    = 'Håndter slettede dokumenter ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FILENAME']      = 'Navn';
+    $__['I18N_LAST_MODIFIED'] = 'Sidst ændret';
+    $__['I18N_FILESIZE']      = 'Størrelse';
+    $__['I18N_BYTES']         = 'bytes';
+    $__['I18N_KILOBYTES']     = 'kilobytes';
+    $__['I18N_MEGABYTES']     = 'megabytes';
+    $__['I18N_GIGABYTES']     = 'gigabytes';
+    $__['I18N_TERABYTES']     = 'terabytes';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FRONT_USER_HEAD_DETAILS']    = 'Ret dine oplysninger ...';
+    $__['I18N_DETAILS']                    = 'Oplysninger';
+    $__['I18N_LEAVE_BLANK_UNLESS_CHANGING'] = 'efterlad tom, medmindre den skal ændres';
+
+?>

@@ -1,0 +1,357 @@
+Text formatting rules and document syntax - The coWiki idiom
+
+$Id: README.IDIOM,v 1.1 2003/09/04 04:02:08 dtg Exp $
+
+---------------------------------------------------------------------------
+
+This is a short description of the basic formatting rules and tags used in
+coWiki documents. You will learn this simple syntax within minutes.
+
+coWiki documents may contain structural and visual elements, which are
+defined differently. Let's see ...
+
+Table of contents:
+
+  * Embedding raw HTML in coWiki documents
+  * Executing plugins
+  * Document headings
+  * The <toc> tag
+  * The <rem> tag
+  * Bullet lists
+  * Emphasis, italicized and monospace styles
+  * Horizonal rules
+  * Preformatted text
+  * Code boxes
+  * Postings
+  * Tables
+  * Quoting
+  * URI links
+  * Automatic links within a web
+  * Automatic links across webs
+  * At least the most important <noop> tag
+
+---------------------------------------------------------------------------
+
+Embedding raw HTML in coWiki documents
+
+  You can not use raw HTML in coWiki documents because all coWiki documents
+  are parsed to an internal XML representation. Customised HTML might be
+  injected by appropriate plugins only.
+
+---------------------------------------------------------------------------
+
+Executing plugins
+
+  As you have hopefully noticed, the coWiki software consists of plugins
+  only. Certain plugin types (the custom plugins) can be embeded directly
+  in coWiki documents you are creating.
+
+  The basic syntax looks as follows:
+
+    <plugin pluginname>
+
+  Plugins may also have parameters, which must be enclosed in single or
+  double quotes. A proper plugin call looks like:
+
+    <plugin pluginname param1="value1" param2="value2">
+
+  Most plugins carry default values for their parameters and if you are
+  editing a document, you will see a table beneath the text area with all
+  custom plugins and the parameters you may use.
+
+  Basically plugins may be called anywhere in your text and most of them
+  accept Cascading Style Sheets (CSS) attributes (style parameter) to make
+  them float or to influences their visual and interactive behaviour.
+
+---------------------------------------------------------------------------
+
+Document headings
+
+  At the beginning of the line, up to six plus signs (+) followed by a
+  space will create a document heading. You should use headings where
+  appropriate (everywhere :). Your documents should start with the main
+  heading (one + sign).
+
+  The source:
+
+    + This is heading #1
+    ++ %TITLE% - a second level heading that uses a variable
+    +++ An other heading in the third level
+
+    ... etc.
+
+---------------------------------------------------------------------------
+
+The <toc> tag
+
+  This tag gathers all headings (such as ++ at the beginning of a line) of
+  a document and creates a clickable "table of contents" as you can see on
+  top of this document. Hence you should structure your documents with
+  headings.
+
+---------------------------------------------------------------------------
+
+The <rem> tag
+
+  A remark may be embedded inside the body of the text. This text will only
+  show when the document is being edited.
+
+  For example:
+
+    * you can see this
+    *
+
+    * you can see this
+    * <rem>but you cannot see this</rem>
+
+  <rem> takes precedence over <code>.
+
+---------------------------------------------------------------------------
+
+Bullet lists
+
+  Bullet list items are marked with an asterisk (*) for unordered and a
+  hash (#) for ordered lists at the beginning of a line and followed by a
+  space:
+
+    * A list item in an unordered list
+    * Another list item
+     * A =nested= item
+
+    # First item in an ordered list
+     # A nested item
+     # Another nested item
+
+    This will render:
+
+      * A list item in an unordered list
+      * Another list item
+        o A nested item
+
+      1. First item in an ordered list
+        1. A nested item
+        2. Another nested item
+
+  Of course you are able to mix ordered and unordered lists as you wish.
+
+  Example:
+
+    * A list item in an unordered list
+     # Ordered list item
+     # Another one
+    * The last item
+
+  Result:
+
+    * A list item in an unordered list
+      1. Ordered list item
+      2. Another one
+    * The last item
+
+  Using the <br> tag within a bullet.
+
+    * This is a bullet which
+      has some text on another line.
+
+    * This is a bullet which<br>has some text on another line.
+
+---------------------------------------------------------------------------
+
+Emphasis, italicized and monospace styles
+
+  You are able to use emphasis, italic or monospace almost as easily as
+  you use them in your daily emails and usenet postings. If you want to
+  you can mix the styles.
+
+  The source:
+
+    You are able to use *emphasis*, /italic/ or =monospace= almost as
+    easily as you use them in your daily emails and usenet postings.
+    If /*you* want/ to /you *=can=*/ =mix= *the =styles=*.
+
+  These delimiters produce:
+
+    * *emphasis* -> emphasis
+    * /italic/ -> italic
+    * =monospace= -> monospace
+
+  The underline style is not supported, as it indicates hyperlinks and we
+  do not want to confuse our coWiki users, do we?
+
+---------------------------------------------------------------------------
+
+Horizonal rules
+
+  A horizontal rule element is a divider between sections of text. It is
+  expressed by at least three minus signs (---) at the beginning of a line.
+  Extra minus signs are ignored. You can see a lot of these rules on this
+  page.
+
+---------------------------------------------------------------------------
+
+Preformatted text
+
+  The preformatted text is indicated by the <pre> ... </pre> tags. These
+  tags have to be placed at the beginning of a line. They can not be nested.
+
+  Example:
+
+      ___ ___/ / /\ \ (_) | _(_)
+     / __/ _ \ \/  \/ / | |/ / |
+    | (_| (_) \  /\  /| |   <| |
+     \___\___/ \/  \/ |_|_|\_\_|
+
+  Or ...
+
+    +---------+---------+---------+
+    | Field1  | Field2  | Field3  |
+    +---------+---------+---------+
+    |    1    |    1    |    A    |
+    |    2    |    1    |    B    |
+    |    3    |    1    |    C    |
+    |    4    |    1    |    D    |
+    +---------+---------+---------+
+
+---------------------------------------------------------------------------
+
+Code boxes
+
+  Code boxes are very similar to preformatted text. They are indicated by
+  the <code> ... </code> tags. These tags have to be placed at the
+  beginning of a line and cannot be nested. Depending on the coWiki skin
+  template, code boxes will be rendered differently to <pre> tags.
+
+---------------------------------------------------------------------------
+
+Postings
+
+  The <posting>...</posting> tags that will render cited quotes in color.
+  These tags have to be placed at the beginning of a line and can not be
+  nested.
+
+  Example:
+
+    <posting>
+    Somebody wrote:
+
+    > Quoting level 1
+    >> Quoting level 2
+    | >>  Quoting level 3
+    </posting>
+
+---------------------------------------------------------------------------
+
+Tables
+
+  A basic table looks like:
+
+    <table>
+    | *foo*    |  *bar*
+    |  one     |   two
+    | =a cell= | other cell
+    </table>
+
+  Tables have to be surrounded by the <table> ... </table> tags. These tags
+  have to be placed at the beginning of a line and cannot be nested. The
+  pipe (|) delimiter separates cells in a row. Each row has to start with
+  a pipe delimititer - a trailing delimiter in a row is optional.
+
+  The example above will render a very simple table:
+
+    foo 	  bar
+    one 	  two
+    a cell 	other cell
+
+  The <table> tag can contain (raw HTML) attibutes to change the visual
+  appearence:
+
+    <table cellpadding="2" border="1" style="text-align:center">
+    | *foo*    |  *bar*
+    |  one     |   two
+    | =a cell= | other cell
+    </table>
+
+  Spanning over columns is possible with multiple successive pipes
+  (|| or ||| etc.)
+
+    <table align="center" cellspacing="5" border="1" style="text-align:center">
+    || About this document
+    | *What*   | *When*
+    | Created  | %CREATED%
+    | Modified | %MODIFIED%
+    </table>
+
+  Of course you can play with the style (CSS) attribute to create other
+  borders, backgrounds and so on.
+
+---------------------------------------------------------------------------
+
+Quoting
+
+  If you want to display an indented (quoted) text, coWiki provides
+  the <q> ... </q> tags (q is short for "quote", but I am not able to
+  intuitionally type this word in full. I usually type "qoute", accidentally
+  swapping the "o" and "u" :). This tag works on exactly the same rules as
+  <pre> and <code>: The tags have to be placed at the beginning of a line
+  and cannot be nested.
+
+---------------------------------------------------------------------------
+
+URI links
+
+  URIs with these protocol schemas
+
+    * http://
+    * https://
+    * ftp://
+    * mailto:
+    * news:
+
+  are made into links automatically, and will be opened in a new window or
+  with an associated application (e.g. for mailto: or news:). Your browser
+  will, of course, need to be properly configured to use an external
+  application. :)
+
+---------------------------------------------------------------------------
+
+Automatic links within a web
+
+  If you do not know what a Web in the coWiki context is, please refer
+  to What is a coWiki web? first. Links within a web are indicated by
+  double braces around the document title (or document name).
+
+  A few link examples:
+
+    * ((A document named 'foo')) - an ordinary link within a web
+    * ((A document named 'foo')(click here)) - an ordinary link within a
+       web with an alias
+    * ((http://freshmeat.net/projects/cowiki/)(rate this application)) -
+      an external link with an alias
+
+---------------------------------------------------------------------------
+
+Automatic links across webs
+
+  To link a document within an other web, you will have to enter the web
+  name and the document title separated by a pipe (|).
+
+  Example:
+
+    * ((Home|News))
+    * ((Home|News)(A link alias))
+    * ((coWiki|)(A link to a directory))
+
+---------------------------------------------------------------------------
+
+At least the most important <noop> tag
+
+  You have probably noticed it while reading this document: How is it
+  possible to exclude a coWiki syntax elements from beeing parsed? How
+  can be *bold* displayed, without beeing rendered as bold?
+
+  Well, all text sources embedded in the <noop> ... </noop> tag will be
+  ignored by the coWiki parser and passed through. This makes the <noop>
+  tag probably the most important syntax element in this wiki.
+
+  Ah, by the way <noop> stands for "no operation", and the coWiki parser
+  takes it seriously - but only if you do not nest it :)

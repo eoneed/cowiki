@@ -1,0 +1,280 @@
+<?php
+
+/*
+
+    Copyright (C) Daniel T. Gorski, <daniel.gorski@develnet.org>
+
+    $Id: en.iso-8859-1.cat,v 1.34 2005/01/30 21:27:11 dgorski Exp $
+
+    This file is part of coWiki. coWiki is free software under the terms of
+    the GNU General Public License (GPL). Read the LICENSE file. If you did
+    not receive a copy of the license and are not able to obtain it through
+    the internet, please send a note to <license@cowiki.org> so we can mail
+    you a copy immediately.
+
+    @purpose:   This is a language catalog file for i18n
+    @language:  English
+    @comments:  none
+    @date:      01. November 2002
+    @author:    Daniel T. Gorski <daniel.gorski@develnet.org>
+
+*/
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CHARSET']      = 'UTF-8';
+    $__['I18N_LOCALES']      = 'en_EN, en_GB, en_US';
+    $__['I18N_DIRECTION']    = 'ltr';
+    $__['I18N_DATE_FORMAT']  = '%d %b %y';
+    $__['I18N_TIME_FORMAT']  = '%H:%M';
+    $__['I18N_TODAY']        = 'today';
+    $__['I18N_YESTERDAY']    = 'yesterday';
+    $__['I18N_PROCESSED_IN'] = 'Processed in %s sec.';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_YES']                 = 'Yes';
+    $__['I18N_NO']                  = 'No';
+    $__['I18N_OK']                  = 'OK';
+    $__['I18N_UP']                  = 'Up';
+    $__['I18N_DOWN']                = 'Down';
+    $__['I18N_LEFT']                = 'Left';
+    $__['I18N_RIGHT']               = 'Right';
+    $__['I18N_PREV']                = 'Prev.';
+    $__['I18N_NEXT']                = 'Next';
+    $__['I18N_SAVE']                = 'Save';
+    $__['I18N_DELETE']              = 'Delete';
+    $__['I18N_CANCEL']              = 'Cancel';
+    $__['I18N_EDIT']                = 'Edit';
+    $__['I18N_CHANGE']              = 'Change';
+    $__['I18N_SELECT_ALL']          = 'Select all';
+    $__['I18N_RANGE']               = 'Range';
+    $__['I18N_REVERSE']             = 'Reverse';
+    $__['I18N_MOVE']                = 'Move';
+    $__['I18N_SEND']                = 'Send';
+    $__['I18N_UPLOAD']              = 'Upload';
+    $__['I18N_SHOW']                = 'Show';
+    $__['I18N_CLOSE']               = 'Close';
+    $__['I18N_RESET']               = 'Reset';
+    $__['I18N_SEARCH']              = 'Search';
+    $__['I18N_MORE']                = 'More';
+    $__['I18N_SEARCH_RESULT']       = 'Search result';
+    $__['I18N_SEARCH_RESULT_FOR']   = 'Search result for';
+    $__['I18N_SEARCH_MATCHES']      = '%s matches';
+    $__['I18N_SEARCH_NO_RESULT']    = 'Nothing found';
+    $__['I18N_JOIN']                = 'Join';
+    $__['I18N_REGISTER']            = 'Register';
+    $__['I18N_HELP']                = 'Help';
+    $__['I18N_PREVIEW']             = 'Preview';
+    $__['I18N_MANDANTORY']          = 'Mandantory';
+    $__['I18N_ACCESS']              = 'Access';
+    $__['I18N_CREATED']             = 'Created';
+    $__['I18N_MODIFIED']            = 'Modified';
+    $__['I18N_MODIFIED_BY']         = 'Modified by';
+    $__['I18N_DELETED']             = 'Deleted';
+    $__['I18N_OWNERSHIP']           = 'Ownership';
+    $__['I18N_LOGIN']               = 'Login';
+    $__['I18N_LOGOUT']              = 'Logout';
+    $__['I18N_PASSWORD']            = 'Password';
+    $__['I18N_PASSWORD_IS_CRYPTED'] = 'Password already encrypted';
+    $__['I18N_NAME']                = 'Name';
+    $__['I18N_DESCRIPTION']         = 'Description';
+    $__['I18N_EMAIL']               = 'Email';
+    $__['I18N_ACTIVE']              = 'Active';
+    $__['I18N_LOCKED']              = 'Locked';
+    $__['I18N_EXPIRES']             = 'Expires';
+    $__['I18N_DATE']                = 'Date';
+    $__['I18N_TIME']                = 'Time';
+    $__['I18N_SORT']                = 'Sort';
+    $__['I18N_ORDER']               = 'Order';
+    $__['I18N_REPLY']               = 'Reply';
+    $__['I18N_REPLIES']             = 'Replies';
+    $__['I18N_ERROR_STATUS']        = 'Status';
+    $__['I18N_EMPTY_DIR']           = 'Empty directory';
+    $__['I18N_PRINT_VERSION']       = 'Print version';
+    $__['I18N_ADMINISTRATION']      = 'Administration';
+    $__['I18N_OPTIONS']             = 'Options';
+    $__['I18N_PREFERENCES']         = 'Preferences';
+    $__['I18N_COOKIES_REQUIRED']    = 'Persistent cookies required';
+    $__['I18N_LINKS']               = 'Links';
+    $__['I18N_DOCUMENT_URL']        = 'URL of this document';
+    $__['I18N_REFERENCE']           = 'Reference';
+    $__['I18N_RECORD_DATA']         = 'Record data';
+    $__['I18N_AMBI_RESULT']         = 'Ambiguous results';
+    $__['I18N_SIMI']                = 'Similar';
+    $__['I18N_SIMI_RESULT']         = 'Similar results';
+    $__['I18N_REVISION']            = 'Rev.';
+    $__['I18N_HOST']                = 'Host';
+    $__['I18N_IP']                  = 'IP';
+    $__['I18N_EDIT']                = 'Edit';
+    $__['I18N_DOC_NEW']             = 'New document';
+    $__['I18N_DOC_VIEW']            = 'Document view';
+    $__['I18N_DIR_NEW']             = 'New directory';
+    $__['I18N_DIR_LIST']            = 'List directory';
+    $__['I18N_DIR_VIEW']            = 'Directory view';
+    $__['I18N_DIR_INDEX']           = 'Show index';
+    $__['I18N_USER_NEW']            = 'New user';
+    $__['I18N_GROUP_NEW']           = 'New group';
+    $__['I18N_ADMIN']               = 'Admin';
+    $__['I18N_BACK']                = 'Back';
+    $__['I18N_XML_SHOW']            = 'Show XML';
+    $__['I18N_HISTORY']             = 'History';
+    $__['I18N_VIEW']                = 'View';
+    $__['I18N_VIEWS']               = 'Views';
+    $__['I18N_COMPARE']             = 'Compare';
+    $__['I18N_COMPARISON']          = 'Comparison';
+    $__['I18N_OLD']                 = 'Old';
+    $__['I18N_DIFF']                = 'Diff';
+    $__['I18N_LEGEND']              = 'Legend';
+    $__['I18N_CHANGED']             = 'Changed';
+    $__['I18N_ADDED']               = 'Added';
+    $__['I18N_REMOVED']             = 'Removed';
+    $__['I18N_RECOVER']             = 'Recover';
+    $__['I18N_IDENTICAL']           = 'Identical';
+    $__['I18N_DOC']                 = 'Document';
+    $__['I18N_DIR']                 = 'Directory';
+    $__['I18N_CURRENT']             = 'Current';
+    $__['I18N_PARAMETER']           = 'Parameter';
+    $__['I18N_AVAIL_PLUGIN']        = 'Available plugins';
+    $__['I18N_TEMPLATE']            = 'Template';
+    $__['I18N_LANGUAGE']            = 'Language';
+    $__['I18N_FONT_FAMILY']         = 'Font family';
+    $__['I18N_FONT_SIZE']           = 'Font size';
+    $__['I18N_FONT_ALIGN']          = 'Font align';
+    $__['I18N_FONT_ALIGN_NORMAL']   = 'Normal';
+    $__['I18N_FONT_ALIGN_JUSTIFY']  = 'Justify';
+    $__['I18N_SUBJECT']             = 'Subject';
+    $__['I18N_FROM']                = 'From';
+    $__['I18N_CONTENT']             = 'Content';
+    $__['I18N_MEDIACENTER']         = 'Media center';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_USER']          = 'User';
+    $__['I18N_GROUP']         = 'Group';
+    $__['I18N_WORLD']         = 'World';
+    $__['I18N_ACCESS_READ']   = 'Read';
+    $__['I18N_ACCESS_WRITE']  = 'Write';
+    $__['I18N_ACCESS_EXEC']   = 'Enter';
+    $__['I18N_USER_ID']       = 'User id';
+    $__['I18N_GROUP_DEFAULT'] = 'Default group';
+    $__['I18N_GROUP_MEMBER']  = 'Member groups';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CURRENT_USER']   = 'Current user';
+    $__['I18N_ROOT_FULLNAME']  = 'coWiki Admin';
+    $__['I18N_GUEST_FULLNAME'] = 'Guest';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_COM_THREADS']           = 'Threads';
+    $__['I18N_COM_COMMENTS']          = 'Comments';
+    $__['I18N_COM_COMMENT']           = 'Comment';
+    $__['I18N_COM_COMMENT_VIEW']      = 'View comments';
+    $__['I18N_COM_COMMENT_WRITE']     = 'New comment';
+    $__['I18N_COM_ATTRIBUTION']       = 'On %s, %s wrote:';
+    $__['I18N_COM_HEAD_CREATE_EDIT']  = 'Write your comment ...';
+    $__['I18N_COM_IF_ANSWER_NOTIFY']  = 'Notify me upon an answer';
+    $__['I18N_COM_PREV_THREAD']       = 'Prev. thread';
+    $__['I18N_COM_NEXT_THREAD']       = 'Next thread';
+    $__['I18N_COM_PREV_POSTING']      = 'Prev. posting';
+    $__['I18N_COM_NEXT_POSTING']      = 'Next posting';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_SHOUTBOX'] = 'Shoutbox';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DOC_TOKEN']                    = '';
+    $__['I18N_DOC_CREATED']                  = 'created';
+    $__['I18N_DOC_CHANGED']                  = 'changed';
+    $__['I18N_DOC_DELETED_DOCUMENT']         = 'Deleted document';
+    $__['I18N_DOC_UNRESOLVED_WEB_REFERENCE'] = 'Unresolved cross web reference';
+    $__['I18N_DOC_HEAD_CREATE_EDIT']         = 'Create or edit a document ...';
+    $__['I18N_DOC_HEAD_DELETE']              = 'Delete the document ...';
+    $__['I18N_DOC_HEAD_RECOVER']             = 'Recover the document ...';
+    $__['I18N_DOC_KEYWORDS']                 = 'Keywords';
+    $__['I18N_DOC_MINOR_CHANGE']             = 'This is a minor change';
+    $__['I18N_DOC_ALLOW_COMMENTS']           = 'Allow comments';
+    $__['I18N_DOC_NOTIFICATION_USER']        = 'Inform me on changes';
+    $__['I18N_DOC_NOTIFICATION_GROUP']       = 'Inform group on changes';
+    $__['I18N_DOC_IF_CHANGED_NOTIFY']        = 'If changed, notify';
+    $__['I18N_DOC_CONFIRM_DELETE']           = 'Do you want to delete the &quot;<strong>%s</strong>&quot; document?';
+
+    $__['I18N_DOC_HIST_HEAD']                = 'Document history ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DIR_TOKEN']              = '[dir]';
+    $__['I18N_DIR_SELF']               = 'self';
+    $__['I18N_DIR_PARENT']             = 'parent';
+    $__['I18N_DIR_CONTENT_OF']         = 'Content of &quot;%s&quot;';
+    $__['I18N_DIR_HEAD_CREATE_EDIT']   = 'Create or edit a directory ...';
+    $__['I18N_DIR_HEAD_SELECTED_MOVE'] = 'Move selected items to ...';
+    $__['I18N_DIR_HEAD_DELETE']        = 'Delete the directory ...';
+    $__['I18N_DIR_IS_INDEX']           = 'Index';
+    $__['I18N_DIR_NO_INDEX']           = 'No index';
+    $__['I18N_DIR_IN_MENU']            = 'Menu';
+    $__['I18N_DIR_IN_FOOTER']          = 'Footer';
+    $__['I18N_DIR_WITH_SELECTED']      = 'With selected';
+    $__['I18N_DIR_CONFIRM_DELETE']     = 'Do you want to delete the &quot;<strong>%s</strong>&quot; directory?';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_AUTH_HEAD_CHANGE'] = 'Change user ...';
+    $__['I18N_AUTH_LOGIN_NAME']  = 'Login name';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_ADMIN_MENU_LABEL_SETUP']     = 'Setup';
+    $__['I18N_ADMIN_MENU_LABEL_STRUCT']    = 'Web structure';
+    $__['I18N_ADMIN_MENU_LABEL_USER']      = 'User management';
+    $__['I18N_ADMIN_MENU_LABEL_GROUP']     = 'Group management';
+    $__['I18N_ADMIN_MENU_LABEL_CACHE']     = 'Clean disk cache';
+    $__['I18N_ADMIN_MENU_LABEL_UPDATE']    = 'Software update';
+    $__['I18N_ADMIN_MENU_LABEL_FORUM']     = 'Forum maintenance';
+    $__['I18N_ADMIN_MENU_LABEL_TRASH']     = 'Trashcan management';
+    $__['I18N_ADMIN_MENU_LABEL_EXIT']      = 'Exit administration';
+
+    $__['I18N_ADMIN_WEB_HEAD_MANAGE']      = 'Manage web directory structure ...';
+    $__['I18N_ADMIN_WEB_HEAD_EDIT']        = 'Create or edit a web directory ...';
+
+    $__['I18N_ADMIN_USER_HEAD_MANAGE']     = 'Manage users ...';
+    $__['I18N_ADMIN_USER_HEAD_EDIT']       = 'Create or edit a user ...';
+    $__['I18N_ADMIN_USER_HEAD_DELETE']     = 'Delete user ...';
+    $__['I18N_ADMIN_USER_CONFIRM_DELETE']  = 'Do you want to delete user &quot;<strong>%s</strong>&quot; (uid %s)?';
+
+    $__['I18N_ADMIN_GROUP_HEAD_MANAGE']    = 'Manage user groups ...';
+    $__['I18N_ADMIN_GROUP_HEAD_EDIT']      = 'Create or edit a user group ...';
+    $__['I18N_ADMIN_GROUP_HEAD_DELETE']    = 'Delete user group ...';
+    $__['I18N_ADMIN_GROUP_CONFIRM_DELETE'] = 'Do you want to delete user group &quot;<strong>%s</strong>&quot; (gid %s)?';
+
+    $__['I18N_ADMIN_CACHE_HEAD_MANAGE']    = 'Manage cache ...';
+    $__['I18N_ADMIN_CACHE_HEAD_DELETE']    = 'Delete cache ...';
+    $__['I18N_ADMIN_CACHE_CONFIRM_DELETE'] = 'Do you want to delete the cache? The cache will be rebuild successively.';
+
+    $__['I18N_ADMIN_FORUM_HEAD_MANAGE']    = 'Manage forums ...';
+    $__['I18N_ADMIN_FORUM_HEAD_EDIT']      = 'Create or edit a forum ...';
+
+    $__['I18N_ADMIN_TRASH_HEAD_MANAGE']    = 'Manage deleted documents ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FILENAME']      = 'Name';
+    $__['I18N_LAST_MODIFIED'] = 'Last modified';
+    $__['I18N_FILESIZE']      = 'Size';
+    $__['I18N_BYTES']         = 'bytes';
+    $__['I18N_KILOBYTES']     = 'kilobytes';
+    $__['I18N_MEGABYTES']     = 'megabytes';
+    $__['I18N_GIGABYTES']     = 'gigabytes';
+    $__['I18N_TERABYTES']     = 'terabytes';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FRONT_USER_HEAD_DETAILS']     = 'Change your details ...';
+    $__['I18N_DETAILS']                     = 'Details';
+    $__['I18N_LEAVE_BLANK_UNLESS_CHANGING'] = 'leave blank unless changing';
+
+?>

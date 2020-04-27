@@ -1,0 +1,272 @@
+<?php
+
+/*
+
+    Copyright (C) Daniel T. Gorski, <daniel.gorski@develnet.org>
+
+    $Id: fr.iso-8859-1.cat,v 1.18 2005/01/30 21:27:11 dgorski Exp $
+
+    This file is part of coWiki. coWiki is free software under the terms of
+    the GNU General Public License (GPL). Read the LICENSE file. If you did
+    not receive a copy of the license and are not able to obtain it through
+    the internet, please send a note to <license@cowiki.org> so we can mail
+    you a copy immediately.
+
+    @purpose:   This is a language catalog file for i18n
+    @language:  French
+    @comments:  none
+    @date:      14. August 2003
+    @author:    Kokou Ahadjitse <kahadji@cuic.ca>
+
+*/
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CHARSET']      = 'ISO-8859-1';
+    $__['I18N_LOCALES']      = 'fr_FR, fr';
+    $__['I18N_DIRECTION']    = 'ltr';
+    $__['I18N_DATE_FORMAT']  = '%d %b %y';
+    $__['I18N_TIME_FORMAT']  = '%H:%M';
+    $__['I18N_TODAY']        = 'Aujourd&#145;hui';
+    $__['I18N_YESTERDAY']    = 'Hier';
+    $__['I18N_PROCESSED_IN'] = 'Ex&eacute;cut&eacute; en %s sec.';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_YES']                 = 'Oui';
+    $__['I18N_NO']                  = 'Non';
+    $__['I18N_OK']                  = 'OK';
+    $__['I18N_UP']                  = 'Vers le haut';
+    $__['I18N_DOWN']                = 'Vers le bas';
+    $__['I18N_LEFT']                = '&Agrave; gauche';
+    $__['I18N_RIGHT']               = '&Agrave; droite';
+    $__['I18N_PREV']                = 'pr&eacute;c&eacute;dent';
+    $__['I18N_NEXT']                = 'Suivant';
+    $__['I18N_SAVE']                = 'Enregistrer';
+    $__['I18N_DELETE']              = 'Effacer';
+    $__['I18N_CANCEL']              = 'Annuler';
+    $__['I18N_EDIT']                = '&Eacute;diter';
+    $__['I18N_CHANGE']              = 'Changer';
+    $__['I18N_SELECT_ALL']          = 'Selectionner tout';
+    $__['I18N_RANGE']               = 'Aligner';
+    $__['I18N_REVERSE']             = 'Inverser';
+    $__['I18N_MOVE']                = 'D&eacute;placer';
+    $__['I18N_SEND']                = 'Envoyer';
+    $__['I18N_UPLOAD']              = 'Envoi de fichier';
+    $__['I18N_SHOW']                = 'Montrer';
+    $__['I18N_CLOSE']               = 'Fermer';
+    $__['I18N_RESET']               = 'R&eacute;initialiser';
+    $__['I18N_SEARCH']              = 'Chercher';
+    $__['I18N_MORE']                = 'Davantage';
+    $__['I18N_SEARCH_RESULT']       = 'R&eacute;sultats de la recherche';
+    $__['I18N_SEARCH_RESULT_FOR']   = 'R&eacute;sultat de la recherche pour';
+    $__['I18N_SEARCH_MATCHES']      = '%s de correspondances';
+    $__['I18N_SEARCH_NO_RESULT']    = 'Aucun r&eacute;sultat';
+    $__['I18N_JOIN']                = 'Joindre';
+    $__['I18N_REGISTER']            = 'S&#145;enregister';
+    $__['I18N_HELP']                = 'Aide';
+    $__['I18N_PREVIEW']             = 'Aperu&ccedil;';
+    $__['I18N_MANDANTORY']          = 'Obligatoire';
+    $__['I18N_ACCESS']              = 'Acc&eacute;der';
+    $__['I18N_CREATED']             = 'Cre&eacute;';
+    $__['I18N_MODIFIED']            = 'Modifi&eacute;';
+    $__['I18N_MODIFIED_BY']         = 'Modifi&eacute; par';
+    $__['I18N_DELETED']             = 'Effac&eacute;';
+    $__['I18N_OWNERSHIP']           = 'Propri&eacute;t&eacute;';
+    $__['I18N_LOGIN']               = 'Connexion';
+    $__['I18N_LOGOUT']              = 'D&eacute;connexion';
+    $__['I18N_PASSWORD']            = 'Mot de passe';
+    $__['I18N_PASSWORD_IS_CRYPTED'] = 'Password already encrypted';
+    $__['I18N_NAME']                = 'Nom';
+    $__['I18N_DESCRIPTION']         = 'Description';
+    $__['I18N_EMAIL']               = 'Adresse &eacute;lectronique';
+    $__['I18N_ACTIVE']              = 'Activ&eacute;';
+    $__['I18N_LOCKED']              = 'Verrouill&eacute;';
+    $__['I18N_EXPIRES']             = 'Expire';
+    $__['I18N_DATE']                = 'Date';
+    $__['I18N_TIME']                = 'Temps';
+    $__['I18N_SORT']                = 'Trier';
+    $__['I18N_ORDER']               = 'Ordonner';
+    $__['I18N_REPLY']               = 'R&eacute;ponse';
+    $__['I18N_REPLIES']             = 'R&eacute;ponses';
+    $__['I18N_ERROR_STATUS']        = '&Eacute;tat';
+    $__['I18N_EMPTY_DIR']           = 'R&eacute;pertoire vide';
+    $__['I18N_PRINT_VERSION']       = 'Imprimer une version';
+    $__['I18N_ADMINISTRATION']      = 'Administration';
+    $__['I18N_OPTIONS']             = 'Options';
+    $__['I18N_PREFERENCES']         = 'Pr&eacute;f&eacute;rences';
+    $__['I18N_COOKIES_REQUIRED']    = 'Cookies persistants requis';
+    $__['I18N_LINKS']               = 'Liens';
+    $__['I18N_DOCUMENT_URL']        = 'URL de ce document';
+    $__['I18N_REFERENCE']           = 'R&eacute;f&eacute;rence';
+    $__['I18N_RECORD_DATA']         = 'Donn&eacute;e d&#145;enregistrement';
+    $__['I18N_AMBI_RESULT']         = 'R&eacute;sultats ambigus';
+    $__['I18N_SIMI']                = 'Similaire';
+    $__['I18N_SIMI_RESULT']         = 'R&eacute;sultats similaires';
+    $__['I18N_REVISION']            = 'R&eacute;v.';
+    $__['I18N_HOST']                = 'H&ocirc;te';
+    $__['I18N_IP']                  = 'IP';
+    $__['I18N_EDIT']                = '&Eacute;diter';
+    $__['I18N_DOC_NEW']             = 'Nouveau document';
+    $__['I18N_DOC_VIEW']            = 'Affichage du document';
+    $__['I18N_DIR_NEW']             = 'Nouveau r&eacute;pertoire';
+    $__['I18N_DIR_LIST']            = 'Afficher le r&eacute;pertoire';
+    $__['I18N_DIR_VIEW']            = 'Vue du r&eacute;pertoire';
+    $__['I18N_DIR_INDEX']           = 'Montrer l&#145;index';
+    $__['I18N_USER_NEW']            = 'Nouvel utilisateur';
+    $__['I18N_GROUP_NEW']           = 'Nouveau groupe';
+    $__['I18N_ADMIN']               = 'Admin';
+    $__['I18N_BACK']                = 'Arri&egrave;re';
+    $__['I18N_XML_SHOW']            = 'Montrer XML';
+    $__['I18N_HISTORY']             = 'Historique';
+    $__['I18N_VIEW']                = 'Afficher';
+    $__['I18N_VIEWS']               = 'Affichage';
+    $__['I18N_COMPARE']             = 'Comparer';
+    $__['I18N_COMPARISON']          = 'Comparaison';
+    $__['I18N_OLD']                 = 'Ancien';
+    $__['I18N_DIFF']                = 'Diff';
+    $__['I18N_LEGEND']              = 'L&eacute;gende';
+    $__['I18N_CHANGED']             = 'Chang&eacute;';
+    $__['I18N_ADDED']               = 'Ajout&eacute;';
+    $__['I18N_REMOVED']             = 'Enlev&eacute;';
+    $__['I18N_RECOVER']             = 'R&eacute;cup&eacute;rer';
+    $__['I18N_IDENTICAL']           = 'Identique';
+    $__['I18N_DOC']                 = 'Document';
+    $__['I18N_DIR']                 = 'R&eacute;pertoire';
+    $__['I18N_CURRENT']             = 'Actuel';
+    $__['I18N_PARAMETER']           = 'Param&egrave;tre';
+    $__['I18N_AVAIL_PLUGIN']        = 'Modules d&#145;extension disponibles';
+    $__['I18N_TEMPLATE']            = 'Fichier mod&egrave;le';
+    $__['I18N_LANGUAGE']            = 'Langage';
+    $__['I18N_FONT_FAMILY']         = 'Famille de police';
+    $__['I18N_FONT_SIZE']           = 'Taille de police';
+    $__['I18N_FONT_ALIGN']          = 'Alignement de police';
+    $__['I18N_FONT_ALIGN_NORMAL']   = 'Normal';
+    $__['I18N_FONT_ALIGN_JUSTIFY']  = 'Justifier';
+    $__['I18N_SUBJECT']             = 'Sujet';
+    $__['I18N_FROM']                = 'De';
+    $__['I18N_CONTENT']             = 'Contenu';
+    $__['I18N_MEDIACENTER']         = 'Centre de m&eacute;dia';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_USER']          = 'Utilisateur';
+    $__['I18N_GROUP']         = 'Groupe';
+    $__['I18N_WORLD']         = 'Tous';
+    $__['I18N_ACCESS_READ']   = 'Lire';
+    $__['I18N_ACCESS_WRITE']  = '&Eacute;crire';
+    $__['I18N_ACCESS_EXEC']   = 'Ex&eacute;cuter';
+    $__['I18N_USER_ID']       = 'ID de l&#145;utilisateur';
+    $__['I18N_GROUP_DEFAULT'] = 'Groupe par d&eacute;faut';
+    $__['I18N_GROUP_MEMBER']  = 'Groupes de membres';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CURRENT_USER']   = 'Utilisateur actuel';
+    $__['I18N_ROOT_FULLNAME']  = 'Admin cowiki';
+    $__['I18N_GUEST_FULLNAME'] = 'Invit&eacute;';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_COM_THREADS']           = 'Threads';
+    $__['I18N_COM_COMMENTS']          = 'Commentaires';
+    $__['I18N_COM_COMMENT']           = 'Commenter';
+    $__['I18N_COM_COMMENT_VIEW']      = 'Afficher les commentaires';
+    $__['I18N_COM_COMMENT_WRITE']     = 'Nouveau commentaire';
+    $__['I18N_COM_ATTRIBUTION']       = 'Le %s, %s a &eacute;crit:';
+    $__['I18N_COM_HEAD_CREATE_EDIT']  = '&Eacute;crivez votre commentaire ...';
+    $__['I18N_COM_IF_ANSWER_NOTIFY']  = 'M&#145;avertir s&#145;il y une r&eacute;ponse';
+    $__['I18N_COM_PREV_THREAD']       = 'Thread pr&eacute;c&eacute;dent';
+    $__['I18N_COM_NEXT_THREAD']       = 'Thread suivant';
+    $__['I18N_COM_PREV_POSTING']      = 'Postage pr&eacute;c&eacute;dent';
+    $__['I18N_COM_NEXT_POSTING']      = 'Postage suivant';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_SHOUTBOX'] = 'Shoutbox';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DOC_TOKEN']                    = '';
+    $__['I18N_DOC_CREATED']                  = 'cre&eacute;';
+    $__['I18N_DOC_CHANGED']                  = 'chang&eacute;';
+    $__['I18N_DOC_DELETED_DOCUMENT']         = 'Document effac&eacute;';
+    $__['I18N_DOC_UNRESOLVED_WEB_REFERENCE'] = 'R&Eacute;ference web crois&eacute;e non r&eacute;solue';
+    $__['I18N_DOC_HEAD_CREATE_EDIT']         = 'Cr&eacute;er ou &eacute;diter un document ...';
+    $__['I18N_DOC_HEAD_DELETE']              = 'Effacer le document ...';
+    $__['I18N_DOC_HEAD_RECOVER']             = 'R&eacute;cup&eacute;rer le document ...';
+    $__['I18N_DOC_KEYWORDS']                 = 'Mot-cl&eacute;s';
+    $__['I18N_DOC_MINOR_CHANGE']             = 'Ceci est un changement mineur';
+    $__['I18N_DOC_ALLOW_COMMENTS']           = 'Accepter les commentaires';
+    $__['I18N_DOC_IF_CHANGED_NOTIFY']        = 'Alerter si modifi&eacute;';
+    $__['I18N_DOC_CONFIRM_DELETE']           = 'Voulez-vous effacer le &quot;<strong>%s</strong>&quot; document?';
+
+    $__['I18N_DOC_HIST_HEAD']                = 'Historique du document...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DIR_TOKEN']              = '[dir]';
+    $__['I18N_DIR_SELF']               = 'auto';
+    $__['I18N_DIR_PARENT']             = 'parent';
+    $__['I18N_DIR_CONTENT_OF']         = 'Contenu du &quot;%s&quot;';
+    $__['I18N_DIR_HEAD_CREATE_EDIT']   = 'Cr&eacute;er ou &eacute;diter un r&eacute;pertoire ...';
+    $__['I18N_DIR_HEAD_SELECTED_MOVE'] = 'D&eacute;placer les &eacute;l&eacute;ments s&eacute;lectionn&eacute;s vers ...';
+    $__['I18N_DIR_HEAD_DELETE']        = 'Effacer le r&eacute;pertoire ...';
+    $__['I18N_DIR_IS_INDEX']           = 'Index';
+    $__['I18N_DIR_NO_INDEX']           = 'Pas d&#145;index';
+    $__['I18N_DIR_IN_MENU']            = 'Menu';
+    $__['I18N_DIR_IN_FOOTER']          = 'Bas';
+    $__['I18N_DIR_WITH_SELECTED']      = 'Avec la s&eacute;lection';
+    $__['I18N_DIR_CONFIRM_DELETE']     = 'Voulez-vous effacer le &quot;<strong>%s</strong>&quot; r&eacute;pertoire?';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_AUTH_HEAD_CHANGE'] = 'Changer l&#145;utilisateur ...';
+    $__['I18N_AUTH_LOGIN_NAME']  = 'Nom de connexion';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_ADMIN_MENU_LABEL_SETUP']     = 'R&eacute;glage';
+    $__['I18N_ADMIN_MENU_LABEL_STRUCT']    = 'Structure Web';
+    $__['I18N_ADMIN_MENU_LABEL_USER']      = 'Gestion de l&#145;utilisateur';
+    $__['I18N_ADMIN_MENU_LABEL_GROUP']     = 'Gestion du groupe';
+    $__['I18N_ADMIN_MENU_LABEL_CACHE']     = 'Effacer la m&eacute;moire disque';
+    $__['I18N_ADMIN_MENU_LABEL_UPDATE']    = 'Mise &agrave; jour du logiciel';
+    $__['I18N_ADMIN_MENU_LABEL_FORUM']     = 'Maintenance du forum';
+    $__['I18N_ADMIN_MENU_LABEL_TRASH']     = 'Gestion de la corbeille';
+    $__['I18N_ADMIN_MENU_LABEL_EXIT']      = 'Sortir de l&#145;administration';
+
+    $__['I18N_ADMIN_WEB_HEAD_MANAGE']      = 'G&eacute;rer la strurure du r&eacute;pertoire web  ...';
+    $__['I18N_ADMIN_WEB_HEAD_EDIT']        = 'Cr&eacute;er ou &eacute;diter un r&eacute;pertoire web ...';
+
+    $__['I18N_ADMIN_USER_HEAD_MANAGE']     = 'G&eacute;rer les utilisateurs ...';
+    $__['I18N_ADMIN_USER_HEAD_EDIT']       = 'Cr&eacute;er ou &eacute;diter un utilisateur  ...';
+    $__['I18N_ADMIN_USER_HEAD_DELETE']     = 'Effacer un utilisateur ...';
+    $__['I18N_ADMIN_USER_CONFIRM_DELETE']  = 'Voulez-vous effacer l&#145;utilisateur &quot;<strong>%s</strong>&quot; (uid %s)?';
+
+    $__['I18N_ADMIN_GROUP_HEAD_MANAGE']    = 'G&eacute;rer les groupes d&#145;utilisateurs ...';
+    $__['I18N_ADMIN_GROUP_HEAD_EDIT']      = 'Cr&eacute;er ou &eacute;diter un groupe d&#145;utilisateur ...';
+    $__['I18N_ADMIN_GROUP_HEAD_DELETE']    = 'Effacer un groupe d&#145;utilisateurs ...';
+    $__['I18N_ADMIN_GROUP_CONFIRM_DELETE'] = 'Voulez-vous effacer le groupe d&#145;utilisateur &quot;<strong>%s</strong>&quot; (gid %s)?';
+
+    $__['I18N_ADMIN_CACHE_HEAD_MANAGE']    = 'G&eacute;rer la zone cache ...';
+    $__['I18N_ADMIN_CACHE_HEAD_DELETE']    = 'Effacer la zone cache ...';
+    $__['I18N_ADMIN_CACHE_CONFIRM_DELETE'] = 'Voulez-vous effacer la zone cache? La zone cache sera successivement reconstruite.';
+
+    $__['I18N_ADMIN_FORUM_HEAD_MANAGE']    = 'G&eacute;rer les forums ...';
+    $__['I18N_ADMIN_FORUM_HEAD_EDIT']      = 'Cr&eacute;er ou &eacute;diter un forum ...';
+
+    $__['I18N_ADMIN_TRASH_HEAD_MANAGE']    = 'G&eacute;rer les documents effac&eacute;s ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FILENAME']      = 'Nom';
+    $__['I18N_LAST_MODIFIED'] = 'Derni&egrave;re modification';
+    $__['I18N_FILESIZE']      = 'Taille';
+    $__['I18N_BYTES']         = 'Octets';
+    $__['I18N_KILOBYTES']     = 'Kilo octets';
+    $__['I18N_MEGABYTES']     = 'M&eacute;ga octets';
+    $__['I18N_GIGABYTES']     = 'Giga octets';
+    $__['I18N_TERABYTES']     = 'T&eacute;ra octets';
+
+?>

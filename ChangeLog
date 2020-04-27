@@ -1,0 +1,175 @@
+#
+# coWiki change log
+#
+# $Id: ChangeLog 234 2007-08-05 02:28:16Z eon $
+#
+
+Version 0.3.6
+---------------------------------------------------------------------------
+* 2011-01-09 - Switch to UTF-8 (ack)
+
+Version 0.3.5
+---------------------------------------------------------------------------
+* 2007-08-04 - Added email to the CurrentUser Object (ack)
+* 2007-08-04 - UriInfo::__construct()
+               Allow + in scheme / now UriInfo can handle mysql+innodb://
+               or imap+ssl://host/ (ack)
+* 2007-08-04 - WikiParser::processParamPlugin()
+               Allow multiline plugin declaration (ack)
+* 2007-08-03 - Fixed plugin "CustomPluginInfo" to work with Win \r\n (ack)
+* 2007-08-03 - Fixed getDirName() to work under Win (ack)
+* 2007-08-03 - Added basic fileuploads for Documents (ack)
+* 2007-08-03 - Added alert if the PECL extension "http" is loaded
+               Collision with the coWiki classes HttpRequest, HttpResponse
+               (ack)
+* 2007-08-03 - Added a quickhack if the tmp-path is empty or does not
+               exists (ack)
+* 2007-08-03 - Fixed all E_STRICT warnings with static getInstance methods
+               (ack)
+* 2007-08-01 - Added extending of documents with the same rights as
+               the parent (ack)
+* 2007-08-01 - Added prefix and target to CustomRssViewer (ack)
+* 2007-08-01 - Added the possibility to log Messages to a local file
+               instead of error_log (ack)
+
+
+Version 0.3.4 (Boron) - 24. February 2005                CVS tag: REL_0_3_4
+---------------------------------------------------------------------------
+* 2005-02-19 - Fixed bug #111: Definition of access modifiers in interfaces
+               crashed coWiki due to changes in upcoming PHP 5.0.4/5.1.
+               Additionally the current PHP version provides a built-in
+               Observer interface that deranged our implemention (dtg)
+* 2005-02-19 - Fixed bug #116: clearing cache now works with relative path
+               on Windows (nb)
+* 2005-02-19 - Fixed bug #115: When the cache is empty, clearing the
+               cache gives a warning (nb)
+* 2005-02-18 - Fixed bug #112: wrong assignment causing ressource loss (nb)
+* 2005-02-16 - Fixed bug #98: Added chooseable LOCKING_METHOD (nb)
+* 2005-02-14 - Fixed bug #108: Ambiguous results are not listed (dtg)
+* 2005-02-14 - Fixed bug #100: "Curare" template has no search input
+               field (dtg)
+* 2005-02-14 - Fixed bug #102: Indenting with ** does not work properly,
+               or causes text to be lost (dtg)
+* 2005-02-14 - Fixed bug #13: Auto-indexed directory listings have
+               wrongly formatted file sizes (flavciou)
+* 2005-02-12 - Fixed issue #99: Logger facility suffers of a chicken-egg
+               problem (dtg)
+* 2005-02-10 - Adjusted issue #64: broken images in Africa and Spitbergen
+               templates (teufelkuh/dtg)
+* 2005-02-06 - Fixed bug #25: Search does not respect page/dir rights (dtg)
+* 2005-02-04 - Added possibility to wrap extremely long URIs (dtg)
+* 2005-02-02 - Added ifempty/ifnotempty statements to template parser (dtg)
+* 2005-02-01 - Fixed bug #43: Template parser doesn't honour variables from
+               Registry (dtg)
+* 2005-01-30 - Implemented issue #29: enhanced the 'embed' plugin to accept
+               'align' parameter for media objects (dtg)
+* 2005-01-30 - Accept already encrypted passwords in user edit area (dtg)
+* 2005-01-30 - Fixed bug #38: Unable to read default template config file
+               on Win32 (paulha)
+* 2005-01-29 - Added proxy handling for outgoing requests (dtg)
+* 2005-01-29 - Fixed bug #20: Titles of forbidden documents not secure (dtg)
+* 2005-01-29 - Fixed bug #36: If no document/node number is given, show
+               the first web (and if given its index file) that is readable
+               by the current user (dtg)
+* 2005-01-23 - Fixed bug #9: Reverse-parsing incorrect tables causes
+               partial loss of page source (dtg)
+* 2005-01-22 - Fixed bug #32: Possible for admin to accidentally lose user
+               login and password (dtg)
+* 2005-01-22 - Fixed bug #26: <sub>/<sup> misbehaviour in edit window (dtg)
+* 2005-01-22 - Fixed bug #6: Extra heading before <toc> crashes PHP (dtg)
+* 2005-01-22 - Fixed references to local constants in AutoIndex plugin (dtg)
+* 2005-01-21 - Fixed bug #24: the print version of a site opens twice (dtg)
+* 2005-01-16 - Fixed bug #28: diff utils have no -65535 option anymore (dtg)
+* 2004-11-25 - Added Portuguese-Brazil translation, iso-8859-1 (wsartori)
+* 2004-11-10 - Added Slovak translation, iso-8859-2 (pvrabel)
+* 2004-10-14 - Added debug log capabilities (Logger class) (dtg)
+* 2004-08-02 - Fixed <noop>|<noop> behaviour in <table>s (dtg)
+* 2004-07-27 - Added 'Africa' and 'Spitsbergen' templates (tdudzisz)
+* 2004-07-22 - Added PostInstall plugin that reports installation
+               success (dtg)
+* 2004-07-08 - Added Polish translation, iso-8859-2 (tdudzisz)
+* 2004-06-27 - Added configuration file version check, this avoids
+               bug #50: %RUNTIME_BEGIN_NOINDEX% not translated (dtg)
+* 2004-03-11 - Adjusted syntax due to changes in evolving PHP5RC1 (dtg)
+* 2004-02-16 - Fixed PHP5 beta4 incompatibilities (fdomig, kschroed)
+* 2004-01-16 - Added Turkish translation, iso-8859-9 (hkuecuek)
+* 2003-11-10 - Added Russian translation, windows-1251 (avasilie)
+* 2003-11-10 - Fixes to configuration file reader. All values in config
+               files must be enclosed in double quotes now (dtg)
+* 2003-11-06 - Class loader now retrieves class names automatically (dtg)
+* 2003-11-03 - Added UserList custom plugin (fdomig)
+
+
+Version 0.3.3 (Beryllium) - 23. October 2003             CVS tag: REL_0_3_3
+---------------------------------------------------------------------------
+* 2003-10-21 - Added RSS viewer plugin (kschroed)
+* 2003-10-21 - Added optional template debugging (kschroed)
+* 2003-10-20 - Several HTML4 validity fixes (kschroed)
+* 2003-10-20 - Fixed plugin CustomEmbed blocking (kschroed)
+* 2003-10-19 - Added feed reading to RssManager (kschroed, dtg)
+* 2003-10-18 - Several fixes in XML parser classes (kschroed)
+* 2003-10-17 - Fixed time sorting in AutoIndex plugin (kschroed)
+* 2003-10-17 - Modified date building in release system (kschroed)
+* 2003-10-15 - Added <sub> und <sup> tags for visualisation of subscript
+               and superscript elements (dtg)
+
+
+Version 0.3.2 (Lithium) - 12. October 2003               CVS tag: REL_0_3_2
+---------------------------------------------------------------------------
+* 2003-10-12 - Finally introduced the <rem> tag element to hide
+               output (dtg)
+* 2003-10-12 - Modified error handler: do not record error doublettes (dtg)
+* 2003-10-12 - Fixed infinite loops in getimagesize() in 'embed' plugin if
+               a remote source is not available - probably a PHP bug (dtg)
+* 2003-10-11 - Added plugin for changing user details (rchurche)
+* 2003-10-07 - Fixed path problems with CGI SAPI - thanks to Rich Churcher
+               for report and assistance (kschroed)
+* 2003-09-30 - Fixed bug #33: <toc> must occur at beginning of a line (dtg)
+* 2003-09-29 - Added Danish translation (I18N) (ohansen)
+* 2003-09-29 - WikiWordHandling is optional now (toggle it in
+               core.conf) (dtg)
+* 2003-09-27 - Fixed host/server name error in RssManager (dtg)
+* 2003-09-24 - ReferrerDAO: Do not store localhost referrers (dtg)
+* 2003-09-22 - Fixed bug #32: User font/size/language settings always
+               override template defaults (dtg)
+
+
+Version 0.3.1 (Helium) - 20. September 2003              CVS tag: REL_0_3_1
+---------------------------------------------------------------------------
+* 2003-09-18 - Fixed document root problems (kschroed)
+* 2003-09-16 - Added XmlObjectGraph for easy XML file access (dtg)
+* 2003-09-15 - Fixed several problems in (Abstract)XmlEventParser (kschroed)
+* 2003-09-14 - Fixed bug #31: size sorting in plugin
+               CustomAutoIndex (kschroed)
+* 2003-09-14 - Fixed bug #29: Two-character links do not work (kschroed)
+* 2003-09-13 - Fixed XmlEventParser (dtg)
+* 2003-09-11 - Added PHP source highlighting in <code> blocks (dtg)
+* 2003-09-10 - Added "head" parameter to CustomAutoIndex (kschroed)
+
+
+Version 0.3.0 (Hydrogen) - 10. September 2003            CVS tag: REL_0_3_0
+---------------------------------------------------------------------------
+* Decision to migrate to the upcoming PHP5 (Zend Engine 2 is in beta
+  state at this time, PHP5 is not born yet)
+* This version is going to be the first public one, hence no real change
+  log is necessary IMO.
+
+
+Version 0.2.1 - August 2002                                   not available
+---------------------------------------------------------------------------
+* Re-birth of the prototype. This version is extremly slow due to its
+  heavy object oriented design (or the trial to do so). PHP is not able
+  to handle that kind of abstraction within a bearable response time, so
+  I was forced to rewrite the code and make it shorter and less abstract.
+  This version is non public, except for a few testers.
+
+
+Version 0.2.0 - March 2002                                    not available
+---------------------------------------------------------------------------
+* An alpha version used by BLUE MARS GmbH for their intranet (heavy bugs
+  in all functions :)
+
+
+Version 0.1.0 - December 2001                                 not available
+---------------------------------------------------------------------------
+* Weekend study: How does a wiki work? Unreleased.

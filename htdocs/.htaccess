@@ -1,0 +1,55 @@
+#
+# You SHOULD move the content of this file to the main httpd (or vhost)
+# configuration file, if you have access to it (do not forget to restart
+# the httpd). The benefit will be a slightly better response time, because
+# your httpd does not need to process this file at every request again
+# and again.
+#
+# If you do not have karma to change the main httpd configuration file,
+# leave this .htaccess as it is. Make sure, that your httpd is basically
+# configured to process .htaccess files (Apaches AllowOverride directive).
+# Ask your administrator if you are in doubt.
+#
+
+# --- BEGIN: httpd configuration for coWiki -------------------------------
+
+#
+# Values for PHP. If you are running PHP as CGI, set the values embeded
+# in <IfModule mod_php...> directly in your php.ini configuration file.
+#
+# First set the include paths for coWiki - you will have to change them
+# to fit your directory structure. PHP must be able to search the htdocs/
+# directory where the coWiki core controller resides and the
+# "includes/cowiki/" path. Files in "includes/cowiki/" MUST NOT be
+# accessible by a user client. Set session related entries also.
+#
+<IfModule mod_php5.c>
+  php_value session.auto_start 0
+  php_value session.use_trans_sid 0
+</IfModule>
+
+#
+# URL-Rewriting for coWiki. If you do not want to use this feature
+# simply set the COWIKI_URL_REWRITE variable to "Off" and comment out
+# the RewriteRule in the following line. Do not forget to delete all cache
+# files (usually in /tmp/) *before* you re-request a coWiki script! Cached
+# files will still contain rewritten links. This is also true for your
+# session data, hence you must erase all session data manually.
+#
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  <IfModule mod_env.c>
+    SetEnv COWIKI_URL_REWRITE On
+    RewriteRule ^([0-9]+)\.html$ index.php?node=$1&%{QUERY_STRING}
+    RewriteRule ^([0-9]+)\.([0-9]+)\.html$ index.php?node=$1&comid=$2%{QUERY_STRING}
+  </IfModule>
+
+  #
+  # Handle WikiWord URLs
+  #
+  RewriteRule ^([A-Z0-9]+[A-Za-z0-9]*)/([A-Z0-9]+[A-Za-z0-9]*)/*$ index.php?webname=$1&docname=$2&%{QUERY_STRING}
+  RewriteRule ^([A-Z0-9]+[A-Za-z0-9]*)/*$ index.php?webname=$1&%{QUERY_STRING}
+</IfModule>
+
+# --- END: httpd configuration for coWiki ---------------------------------

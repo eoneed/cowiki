@@ -1,0 +1,373 @@
+;
+; Copyright (C) Daniel T. Gorski, <daniel.gorski@develnet.org>
+;
+; This file is part of coWiki. coWiki is free software under the terms of
+; the GNU General Public License (GPL). Read the LICENSE file. If you did
+; not receive a copy of the license and are not able to obtain it through
+; the internet, please send a note to <license@cowiki.org> so we can mail
+; you a copy immediately.
+;
+;
+; coWiki main configuration file. Keep its access restricted (mode 0600
+; for the webserver- or php-uid) and be careful with the format of this
+; file, all values have to be enclosed with double quotes (").
+
+; -------------------------------------------------------------------------
+
+[CONFIG]
+
+    ; Determines the version of this configuration file. Required to check
+    ; the configuration file layout for upcoming coWiki versions. DO NOT
+    ; change this value yourself and wonder about errors.
+    VERSION = "1"
+
+; -------------------------------------------------------------------------
+
+[ABOUT]
+
+    ; Informational data about *this* coWiki. Describe here what your
+    ; coWiki is about (the main topic). This consists of a short title
+    ; (max. about 40 characters) and a longer description, thats all.
+    ; Please keep the values in one line. PLEASE fill these fields with
+    ; your intensions, it will be e.g. used to create RSS feeds, it is not
+    ; a senseless throw away data ... DO IT! In the worst case, leave the
+    ; description value empty.
+    TITLE        = ""
+    DESCRIPTION  = ""
+
+; -------------------------------------------------------------------------
+
+[SOFTWARE]
+
+    ; Debug levels. IMPORTANT: set D_OFF in production environments!
+    ;
+    ; Use     tail -f error.log | sed "s/^\[.*\] //"     to watch the
+    ; debug/error log. The error.log is the standard httpd error log file
+    ; that has been defined for this virtual host.
+    ;
+    ; Attention: The debug log is written in an asynchronous manner - that
+    ; means that the order of results might be falsified by concurrent
+    ; requests. Hence the logging mechanism is valuable for testing
+    ; purposes only: you may not rely on the logger results in production
+    ; environments. The logger is also time expensive. If you can afford
+    ; turn it off (D_OFF), do so.
+    ;
+    ; Possible values:
+    ;   D_OFF     (No logging - default value)
+    ;   D_ERR     (Log errors only)
+    ;   D_WARN    (Log warnings only)
+    ;   D_INFO    (Be generally verbose - gossip only)
+    ;   D_SQL     (Log SQL queries only)
+    ;   D_FORK    (Log forks only - that is if another programs are launched)
+    ;   D_IO      (Log disk read/write access only)
+    ;   D_EXE     (Log plugin or third party libraries invocations only)
+    ;   D_ALL     (Everything conglomerated of the above)
+    ;
+    ; You may also combine the values with boolean operators: Examples:
+    ;   DebugLevel = D_ALL & ~D_IO           (All but I/O stuff)
+    ;   DebugLevel = D_ALL & ~D_IO & ~D_SQL  (All but I/O stuff and SQL)
+    ;   DebugLevel = D_ERR | D_WARN          (Only errors and warnings)
+    ;   DebugLevel = D_SQL | D_ERR | D_WARN  (SQL queries, errors, warns)
+    DEBUG_LEVEL = "D_OFF"
+
+    ; Show <!-- start "/path/name.tpl" --> and <!-- end "/path/name.tpl" -->
+    ; in HTML output. This might be useful for debugging templates and while
+    ; development of plugins and templates.
+    DEBUG_TEMPLATES = "off"
+
+    ; Activated update checking might be usefull for you, if you want to
+    ; keep up todate with the latest coWiki version. How often should
+    ; coWiki check for a new version? Valid values are values that can
+    ; be passed to the <http://www.php.net/strtotime> function. To disable
+    ; the check, enter -1 here.
+    CHECK_INTERVAL = "2 weeks"
+
+    ; DO NOT change this URI if not stated otherwise on the official
+    ; mailing list with a digitally signed email from the developers!
+    UPDATE_URI = "http://www.cowiki.org/update/"
+
+; -------------------------------------------------------------------------
+
+[MAIL]
+
+    ; Full name of the responsible coWiki webmaster. This will be e.g.
+    ; used in subscription emails that are send to foreign people. Honor
+    ; your guests with your full name in the make-up your of correspondence
+    ; (please no immature l33t nicks or such).
+    FULL_NAME = ""
+
+    ; The mail return path is *required* to deliver bounced emails back to
+    ; *you*, if the recipient is not reachable. Enter your *main email
+    ; address* here, otherwise bounced coWiki mails will be delivered to
+    ; your postmaster (your admin or internet service provider) and he/she
+    ; will kick your ass to the moon in that case! The programmers of coWiki
+    ; ARE NOT your contact persons for your troubles with your admin or ISP!
+    ; Take care and be warned!
+    RETURN_PATH = "your.bounce.email@example.com"
+
+    ; You have to be prepared to meet hostile and malicious guys, who are
+    ; going to receive emails from coWiki and complain then, even if they
+    ; opted-in and acknowledged mails from you coWiki. You will need an
+    ; "abuse" address. This address can be your RETURN_PATH address or a
+    ; different one *if you watch the abuse reports*. The ABUSE_PATH will
+    ; appear in all automatic emails that are going to be send by coWiki.
+    ; Do not underestimate this and be warned once again. Ask your
+    ; admin if you do not know what mail abusing is and how to act in these
+    ; cases. Abuse is very serious problem, you will have to take action
+    ; when you or your coWiki are affected.
+    ABUSE_PATH = "your.abuse.email@example.com"
+
+; -------------------------------------------------------------------------
+
+[.DOCUMENT]
+
+    RESOURCE = "mysql://USER:PASSWD@localhost/DATABASE"
+
+    ; Upload handling
+    ; UPLOAD_PATH the path after $DOCMENT_ROOT
+    ; No trailing slash
+    UPLOAD_PATH = "/var"
+    UPLOAD_FILE_TYES = "bmp,gif,jpe?g,pdf,psd,tif?f,txt,7z,gz,rar,tar,zip"
+
+; -------------------------------------------------------------------------
+
+[.AUTH]
+
+    RESOURCE = "mysql://USER:PASSWD@localhost/DATABASE"
+
+    ; The HANDLER determines the coWiki class that is able to verify the
+    ; authentification credentials against the RESOURCE above. Builtin
+    ; handlers: AuthMySQL.
+    HANDLER = "AuthMySQL"
+
+    ; Depending on your authentification method, the HANDLER needs
+    ; additional information. If you manage your users directly in coWiki
+    ; you must not change the QUERY. Otherwise you need to change it to fit
+    ; your user database scheme. The query must return the password
+    ; (_only_ the password, no matter of the name of the field) of the user
+    ; who wants to log in. You can also restrict the result to valid users
+    ; in the "where" clause (which is "rec_state = 'R'" in the original
+    ; coWiki tables). The {%LOGIN%} placeholder will be replaced by users
+    ; login name.
+    QUERY = " SELECT  passwd
+                FROM  cowiki_user
+               WHERE  login = '{%LOGIN%}'
+                 AND  rec_state = 'R'"
+
+    ; The method of encryption of the password returned by the QUERY above.
+    ; Possible values: "MD5", "CRYPT" and "PLAIN" (or empty). CRYPT covers
+    ; Standard and Extended DES-based encryption, MD5 encryption with a
+    ; twelve character salt and sixteen characters Blowfish encryption.
+    ; Please be careful with the "PLAIN" (or empty) value, as the input of
+    ; an _encrypted_ password will allow an user to log on! Default value
+    ; for a coWiki installation is "CRYPT".
+    ENCRYPTION = "CRYPT"
+
+    ; Encrypted password for the coWiki "root" (master) user.
+    ; Supported encryptions:
+    ; - Standard DES-based encryption with a two character salt
+    ; - Extended DES-based encryption with a nine character salt
+    ; - MD5 encryption with a twelve character salt starting with $1$
+    ; - Blowfish encryption with a sixteen character salt starting with $2$
+    ; You may generate the crypted password with the "crypt" or "htpasswd"
+    ; commands or let it generate through http://your.cowiki/crypt.php
+    ROOT_PASSWD = ""
+
+    ; Grant root access to *all* users, disables/overrides all access
+    ; checks. WARNING: Any user will become *root* and will be able to
+    ; change or erase anything in coWiki! Please use with caution - eg.
+    ; for debug purposes. Default is off, leave it off! You are warned.
+    ROOT_FOR_ALL = "off"
+
+; -------------------------------------------------------------------------
+
+[.USER]
+
+    RESOURCE = "mysql://USER:PASSWD@localhost/DATABASE"
+
+    ; User resolving is able to ignore user- and group-attributes.
+    ; Logins and group names can be expressed as PCRE (Perl-Compatible
+    ; Regular Expressions). The lists have to be comma separated.
+    IGNORE_UID = ""
+    IGNORE_LOGIN = ".*\$$, administrator"
+
+    IGNORE_GID = ""
+    IGNORE_GROUP_NAME = ".*\$$, machines"
+
+    ; New users that want to subscribe must match following criteria.
+    ; Logins and emails can be expressed as PCRE (Perl-Compatible Regular
+    ; Expressions). The lists have to be comma separated.
+    DISALLOW_LOGIN = ""
+    DISALLOW_EMAIL = "aol, gmx, yahoo, hotmail, web.de, freenet, lycos,
+                      tiscali, netcologne, bluewin, bluemail, chello"
+
+; -------------------------------------------------------------------------
+
+[PATH]
+
+    ; Directory for temporary data. It MUST NOT be accessible by an user
+    ; agent, must be readable and writable for httpd or the PHP-uid.
+    TEMP = "/tmp/"
+
+    ; The following will be replace by the param of the current user
+    ; %UID% %GID% %EMAIL% %LOGIN%
+    ; Finally you have the following constuct
+    ; /home/%LOGIN%/public/,http://pub.domain.org/%LOGIN%/
+    PUBLIC_ALL = ""
+    PUBLIC_USR = ""
+    PUBLIC_GRP = ""
+
+    ; Your binaries directory. It MUST NOT be accessible by an user agent,
+    ; must be readable and writable for httpd or the PHP-uid. Skip this
+    ; parameter in this coWiki version, it is required for future versions.
+    BINARY = "/var/path/to/your/binaries/"
+
+    ; Path of the directory where your "diff" binary resides. This is the
+    ; path only. E.g. if the complete path to your "diff" is "/usr/bin/diff"
+    ; enter "/usr/bin/" here. If no "diff" is available on your system
+    ; leave this value empty.
+    DIFF = "/usr/bin/"
+
+; -------------------------------------------------------------------------
+
+[RUNTIME]
+
+    ; For future use
+    SAFE_MODE_CHECK = "on"
+
+    ; Timezone
+    DEFAULT_TIMEZONE = "GMT"
+
+    ; Primary language used in coWiki documents. Enter the ISO TLD code
+    ; here. (like "en" or "de" or "fr" - for english, german or french etc.)
+    LANGUAGE_PRIMARY = "en"
+
+    ; Set default locale file. This may be overridden by user settings.
+    LANGUAGE_LOCALE = "en.utf-8"
+
+    ; Active template in the "tpl" directory. This is taken if user has not
+    ; choosen an other template.
+    TEMPLATE_ACTIVE = "default"
+
+    ; Output handler callback. This can be e.g. the built-in "ob_gzhandler"
+    ; which compresses the HMTL code (zlib support has to be compiled in).
+    ; The output handler will slow down the script execution, but the pages
+    ; will be delivered faster which may be important for your modem or
+    ; ISDN users. Default is "" (none/off).
+    OUTPUT_HANDLER = ""
+
+    ; Set per user caching. It is recommended to keep this value "on"
+    ; coWikis plugins will be able to create caching files in PATH_TEMP
+    ; directory for faster access and site rendering. Make sure PATH_TEMP
+    ; is read-/writable for coWiki.
+    CACHE_ENABLE = "on"
+
+    ; Mainly for debugging. Default is "off"
+    SHOW_PROCESSING_TIME = "off"
+
+    ; Enable resolving of the reverse DNS name of a remote address (IP).
+    ; Lookups may/will cause delays, turn it "off" if you encounter
+    ; speed problems with your DNS.
+    LOOKUP_DNS = "on"
+
+    ; Access mode bits umask. As this is a collaboration tool the umask
+    ; is set to "002" by default. If you are going to use this software
+    ; in a more restricted mode, you may set this value e.g. to "022"
+    UMASK = "002"
+
+    ; Index and noindex tags for (internal) search engines
+    BEGIN_NOINDEX = ""
+    END_NOINDEX   = ""
+
+    ; Email obfuscation can confuse email harvesters and reduce spam on
+    ; emails used in coWiki documents. This can confuse your users too,
+    ; but it is recommended to keep the value "on".
+    EMAIL_OBFUSCATE = "on"
+
+    ; Control of RSS (RDF) feed creation of recently changed documents.
+    ; If this value is "on", coWiki will generate a RSS feed of its
+    ; recently changed documents that are visible to a normal "guest" user.
+    ; This feed (file) can be read by other programs (e.g. like other
+    ; coWikis) to embed the information in foreign sites. The name of the
+    ; feed file is "recent.rdf" and it is going to be placed in your
+    ; document root. Hence the document root of your virtual host (htdocs/)
+    ; must be writable for the coWiki process in order to use this feature.
+    RSS_FEED_RECENT = "on"
+
+    ; "Teergrubing" will slow down requests for clients that are trying to
+    ; fetch the coWiki content recursive. Set the timeout to the amount of
+    ; seconds you want to delay the request. If you want your coWiki to die
+    ; immediately after a request by these agents, just set the timeout
+    ; to -1. This won't block your webserver process and avoid possible
+    ; denial of service attacks.
+    TEERGRUBING_TIMEOUT = "-1"
+    TEERGRUBING_AGENT   = "wget, getright, offline, larbin, gather, check"
+
+    ; IPs to be teergrubed can be expressed as PCRE (Perl-Compatible
+    ; Regular Expressions). Make sure that your expressions match the
+    ; right IP or IP range. The IP list have to be comma separated.
+    TEERGRUBING_IP = ""
+
+    ; Setting the value to "on" will force coWiki to use a HTTP proxy
+    ; for outgoing connections (eg. for fetching embedded media objects or
+    ; RSS feeds). If you set it "on", you need to set at least
+    ; HTTP_PROXY_HOST/HTTP_PROXY_PORT too. Default value is "off".
+    HTTP_PROXY_ENABLE = "off"
+
+    ; If are sitting behind a HTTP proxy or want to use one, you can
+    ; specify its address (e.g. IP or machine name) and port here. If no
+    ; port is given the standard port 3128 is used.
+    ; Besides, HTTP_PROXY_ENABLE (see above) has to be set accordingly.
+    HTTP_PROXY_HOST = ""
+    HTTP_PROXY_PORT = ""
+
+    ; Setting WIKIWORDS to "on" will allow the coWiki parser to recognize
+    ; the old school "WikiWordLink" document linkage. If you do not like
+    ; automatic "WikiWordsLinks" just put "off" here.
+    WIKIWORDS = "off"
+
+    ; Allow users/groups to be informed by email if any changes were done
+    ; to their documents.
+    ; Does not work yet!
+    NOTIFICATION_ALLOW = "off"
+
+    ; File locking mechanism
+    ; For some purposes it is adequate to prevent simultanous access to
+    ; files. This is accomplished by lockig those file during access. Most
+    ; filesystems provide low-level locking functions, but some don't -
+    ; especially antiquated Windows versions.
+    ; Thus, if there are problems with the standard locking, you can
+    ; control the locking used with the LOCKING_METHOD directive.
+    ; STD  By default coWiki uses PHP's flock() function to lock files
+    ;      while reading and writing.
+    ; FILE On some Windows systems, neither flock() nor link() are
+    ;      available, so you can't use the default locking. In such cases,
+    ;      you can turn on the dot-locking option. Although this method is
+    ;      prone to stale locks, it is the locking technique, that is used
+    ;      by most Windows programs, so it can be considered to be quite
+    ;      reliable.
+    ; NONE If any of the other methods fails, you can switch off the
+    ;      locking. Note that you should ONLY do this if your system
+    ;      supports nothing else - it is a last resort, because it
+    ;      increases the likelihood of file corruption. However, if you
+    ;      are the only person using the system (for example, if this is
+    ;      your personal server), this should not be as much of an issue.
+    LOCKING_METHOD = "STD"
+
+; -------------------------------------------------------------------------
+
+[PLUGIN]
+
+    ; Parameters for the document display plugin. Search highlight
+    ; dramatically slows down the *first* request if someone is entering
+    ; your coWiki via a search engine, but its a nice to have feature.
+    ; Any following requests of the user within coWiki are not affected
+    ; by this directive. The routine relies on the referrer (query) string
+    ; coming form popular search engines.
+    DOC_DISPLAY_SEARCH_HIGHLIGHT = "on"
+
+    ; Default parameters for the shoutbox plugin
+    SHOUTBOX_ENABLE = "on"
+
+    ; Parameters for the referrer plugin
+    REFERRER_ENABLE = "on"

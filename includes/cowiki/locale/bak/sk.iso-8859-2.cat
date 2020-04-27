@@ -1,0 +1,280 @@
+<?php
+
+/*
+
+    Copyright (C) Daniel T. Gorski, <daniel.gorski@develnet.org>
+
+    $Id: sk.iso-8859-2.cat,v 1.3 2005/01/30 21:27:11 dgorski Exp $
+
+    This file is part of coWiki. coWiki is free software under the terms of
+    the GNU General Public License (GPL). Read the LICENSE file. If you did
+    not receive a copy of the license and are not able to obtain it through
+    the internet, please send a note to <license@cowiki.org> so we can mail
+    you a copy immediately.
+
+    @purpose:   This is a language catalog file for i18n
+    @language:  English
+    @comments:  none
+    @date:      17. November 2004
+    @author:    Peter Vrabel <kybu@kybu.org>
+
+*/
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CHARSET']      = 'ISO-8859-2';
+    $__['I18N_LOCALES']      = 'sk_SK';
+    $__['I18N_DIRECTION']    = 'ltr';
+    $__['I18N_DATE_FORMAT']  = '%d %b %y';
+    $__['I18N_TIME_FORMAT']  = '%H:%M';
+    $__['I18N_TODAY']        = 'dnes';
+    $__['I18N_YESTERDAY']    = 'vèera';
+    $__['I18N_PROCESSED_IN'] = 'Vykonané za %s sek.';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_YES']                 = 'Áno';
+    $__['I18N_NO']                  = 'Nie';
+    $__['I18N_OK']                  = 'OK';
+    $__['I18N_UP']                  = 'Hore';
+    $__['I18N_DOWN']                = 'Dolu';
+    $__['I18N_LEFT']                = 'Vµavo';
+    $__['I18N_RIGHT']               = 'Vpravo';
+    $__['I18N_PREV']                = 'Predo¹lý';
+    $__['I18N_NEXT']                = 'Ïal¹í';
+    $__['I18N_SAVE']                = 'Ulo¾i»';
+    $__['I18N_DELETE']              = 'Vymaza»';
+    $__['I18N_CANCEL']              = 'Zru¹i»';
+    $__['I18N_EDIT']                = 'Zmeni»';
+    $__['I18N_CHANGE']              = 'Zmeni»';
+    $__['I18N_SELECT_ALL']          = 'Vybra» v¹etky';
+    $__['I18N_RANGE']               = 'Rozsah';
+    $__['I18N_REVERSE']             = 'Spä»ne';
+    $__['I18N_MOVE']                = 'Presunú»';
+    $__['I18N_SEND']                = 'Posla»';
+    $__['I18N_UPLOAD']              = 'Uploadnú»';
+    $__['I18N_SHOW']                = 'Ukáza»';
+    $__['I18N_CLOSE']               = 'Zavrie»';
+    $__['I18N_RESET']               = 'Reset';
+    $__['I18N_SEARCH']              = 'Vyhµada»';
+    $__['I18N_MORE']                = 'Viac';
+    $__['I18N_SEARCH_RESULT']       = 'Výsledok hµadania';
+    $__['I18N_SEARCH_RESULT_FOR']   = 'Výsledok hµadania';
+    $__['I18N_SEARCH_MATCHES']      = '%s zodpovedá';
+    $__['I18N_SEARCH_NO_RESULT']    = 'Niè nenájdené';
+    $__['I18N_JOIN']                = 'Spoji»';
+    $__['I18N_REGISTER']            = 'Registrova»';
+    $__['I18N_HELP']                = 'Pomoc';
+    $__['I18N_PREVIEW']             = 'Náhµad';
+    $__['I18N_MANDANTORY']          = 'Povinné';
+    $__['I18N_ACCESS']              = 'Prístup';
+    $__['I18N_CREATED']             = 'Vytvorené';
+    $__['I18N_MODIFIED']            = 'Zmenené';
+    $__['I18N_MODIFIED_BY']         = 'Zmenil';
+    $__['I18N_DELETED']             = 'Zmazané';
+    $__['I18N_OWNERSHIP']           = 'Vlastník';
+    $__['I18N_LOGIN']               = 'Login';
+    $__['I18N_LOGOUT']              = 'Odhlási»';
+    $__['I18N_PASSWORD']            = 'Heslo';
+    $__['I18N_PASSWORD_IS_CRYPTED'] = 'Password already encrypted';
+    $__['I18N_NAME']                = 'Meno';
+    $__['I18N_DESCRIPTION']         = 'Popis';
+    $__['I18N_EMAIL']               = 'Email';
+    $__['I18N_ACTIVE']              = 'Aktívny';
+    $__['I18N_LOCKED']              = 'Zamknutý';
+    $__['I18N_EXPIRES']             = 'Expiruje';
+    $__['I18N_DATE']                = 'Dátum';
+    $__['I18N_TIME']                = 'Èas';
+    $__['I18N_SORT']                = 'Triedi»';
+    $__['I18N_ORDER']               = 'Poradie';
+    $__['I18N_REPLY']               = 'Odpoveï';
+    $__['I18N_REPLIES']             = 'Odpovede';
+    $__['I18N_ERROR_STATUS']        = 'Status';
+    $__['I18N_EMPTY_DIR']           = 'Prázdny adresár';
+    $__['I18N_PRINT_VERSION']       = 'Vytlaèi»';
+    $__['I18N_ADMINISTRATION']      = 'Administrácia';
+    $__['I18N_OPTIONS']             = 'Voµby';
+    $__['I18N_PREFERENCES']         = 'Voµby';
+    $__['I18N_COOKIES_REQUIRED']    = 'Persistent cookies required';
+    $__['I18N_LINKS']               = 'Linky';
+    $__['I18N_DOCUMENT_URL']        = 'URL tohoto dokumentu';
+    $__['I18N_REFERENCE']           = 'Odkaz';
+    $__['I18N_RECORD_DATA']         = 'Record data';
+    $__['I18N_AMBI_RESULT']         = 'Viacvýznamný výsledok';
+    $__['I18N_SIMI']                = 'Podobné';
+    $__['I18N_SIMI_RESULT']         = 'Podobné výsledky';
+    $__['I18N_REVISION']            = 'Rev.';
+    $__['I18N_HOST']                = 'Host';
+    $__['I18N_IP']                  = 'IP';
+    $__['I18N_EDIT']                = 'Zmeni»';
+    $__['I18N_DOC_NEW']             = 'Nový dokument';
+    $__['I18N_DOC_VIEW']            = 'Zobrazi» dokument';
+    $__['I18N_DIR_NEW']             = 'Nový adresár';
+    $__['I18N_DIR_LIST']            = 'Zobrazi» adresár';
+    $__['I18N_DIR_VIEW']            = 'Zobrazi» adresár';
+    $__['I18N_DIR_INDEX']           = 'Ukáza» index';
+    $__['I18N_USER_NEW']            = 'Nový u¾ivateµ';
+    $__['I18N_GROUP_NEW']           = 'Nová skupina';
+    $__['I18N_ADMIN']               = 'Admin';
+    $__['I18N_BACK']                = 'Spä»';
+    $__['I18N_XML_SHOW']            = 'Ukáza» XML';
+    $__['I18N_HISTORY']             = 'História';
+    $__['I18N_VIEW']                = 'Zobrazi»';
+    $__['I18N_VIEWS']               = 'Pohµady';
+    $__['I18N_COMPARE']             = 'Porovna»';
+    $__['I18N_COMPARISON']          = 'Porovnanie';
+    $__['I18N_OLD']                 = 'Staré';
+    $__['I18N_DIFF']                = 'Diff';
+    $__['I18N_LEGEND']              = 'Legenda';
+    $__['I18N_CHANGED']             = 'Zmenený';
+    $__['I18N_ADDED']               = 'Pridaný';
+    $__['I18N_REMOVED']             = 'Zmazaný';
+    $__['I18N_RECOVER']             = 'Obnovi»';
+    $__['I18N_IDENTICAL']           = 'Rovnaký';
+    $__['I18N_DOC']                 = 'Dokument';
+    $__['I18N_DIR']                 = 'Adresár';
+    $__['I18N_CURRENT']             = 'Aktálny';
+    $__['I18N_PARAMETER']           = 'Parameter';
+    $__['I18N_AVAIL_PLUGIN']        = 'Dostupné pluginy';
+    $__['I18N_TEMPLATE']            = 'Téma';
+    $__['I18N_LANGUAGE']            = 'Jazyk';
+    $__['I18N_FONT_FAMILY']         = 'Font family';
+    $__['I18N_FONT_SIZE']           = 'Font size';
+    $__['I18N_FONT_ALIGN']          = 'Font align';
+    $__['I18N_FONT_ALIGN_NORMAL']   = 'Normal';
+    $__['I18N_FONT_ALIGN_JUSTIFY']  = 'Justify';
+    $__['I18N_SUBJECT']             = 'Nadpis';
+    $__['I18N_FROM']                = 'Od';
+    $__['I18N_CONTENT']             = 'Obsah';
+    $__['I18N_MEDIACENTER']         = 'Media centrum';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_USER']          = 'U¾ivateµ';
+    $__['I18N_GROUP']         = 'Skupina';
+    $__['I18N_WORLD']         = 'Svet';
+    $__['I18N_ACCESS_READ']   = 'Èíta»';
+    $__['I18N_ACCESS_WRITE']  = 'Zapísa»';
+    $__['I18N_ACCESS_EXEC']   = 'Vstúpi»';
+    $__['I18N_USER_ID']       = 'U¾ivateµove id';
+    $__['I18N_GROUP_DEFAULT'] = 'Predvolená skupina';
+    $__['I18N_GROUP_MEMBER']  = 'Èlenovia skupín';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CURRENT_USER']   = 'Súèasný u¾ivateµ';
+    $__['I18N_ROOT_FULLNAME']  = 'coWiki Admin';
+    $__['I18N_GUEST_FULLNAME'] = 'Náv¹tevník';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_COM_THREADS']           = 'Vlákna';
+    $__['I18N_COM_COMMENTS']          = 'Komentáre';
+    $__['I18N_COM_COMMENT']           = 'Komentár';
+    $__['I18N_COM_COMMENT_VIEW']      = 'Zobrazi» komentáre';
+    $__['I18N_COM_COMMENT_WRITE']     = 'Nový komentár';
+    $__['I18N_COM_ATTRIBUTION']       = 'O %s, %s naísal:';
+    $__['I18N_COM_HEAD_CREATE_EDIT']  = 'Napí¹te svoj kometár ...';
+    $__['I18N_COM_IF_ANSWER_NOTIFY']  = 'Upozorni» pri odpovedi';
+    $__['I18N_COM_PREV_THREAD']       = 'Pred. vlákno';
+    $__['I18N_COM_NEXT_THREAD']       = 'Ïal¹ie vlákno';
+    $__['I18N_COM_PREV_POSTING']      = 'Pred. záznam';
+    $__['I18N_COM_NEXT_POSTING']      = 'Ïal¹í záznam';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_SHOUTBOX'] = 'Výkriky do tmy';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DOC_TOKEN']                    = '';
+    $__['I18N_DOC_CREATED']                  = 'vutvorený';
+    $__['I18N_DOC_CHANGED']                  = 'zmenený';
+    $__['I18N_DOC_DELETED_DOCUMENT']         = 'Zmazané dokumenty';
+    $__['I18N_DOC_UNRESOLVED_WEB_REFERENCE'] = 'Neznámy medziweb odkaz';
+    $__['I18N_DOC_HEAD_CREATE_EDIT']         = 'Vytvori» alebo zmeni» dokument ...';
+    $__['I18N_DOC_HEAD_DELETE']              = 'Vymaza» dokument ...';
+    $__['I18N_DOC_HEAD_RECOVER']             = 'Obnovi» dokument ...';
+    $__['I18N_DOC_KEYWORDS']                 = 'Kµúèe';
+    $__['I18N_DOC_MINOR_CHANGE']             = 'Toto je malá zmena';
+    $__['I18N_DOC_ALLOW_COMMENTS']           = 'Povoli» komentáre';
+    $__['I18N_DOC_NOTIFICATION_USER']        = 'Upovedom ma pri zmene';
+    $__['I18N_DOC_NOTIFICATION_GROUP']       = 'Upovedom skupinu pri zmene';
+    $__['I18N_DOC_IF_CHANGED_NOTIFY']        = 'Ak bola zmenená, upoveodm';
+    $__['I18N_DOC_CONFIRM_DELETE']           = 'Chcete vymaza» &quot;<strong>%s</strong>&quot; dokument?';
+
+    $__['I18N_DOC_HIST_HEAD']                = 'História dokumentu ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DIR_TOKEN']              = '[dir]';
+    $__['I18N_DIR_SELF']               = 'self';
+    $__['I18N_DIR_PARENT']             = 'rodiè';
+    $__['I18N_DIR_CONTENT_OF']         = 'Content of &quot;%s&quot;';
+    $__['I18N_DIR_HEAD_CREATE_EDIT']   = 'Vytvori» alebo zmeni» adresár ...';
+    $__['I18N_DIR_HEAD_SELECTED_MOVE'] = 'Presunút vybrané objekty do ...';
+    $__['I18N_DIR_HEAD_DELETE']        = 'Vymaza» adresár ...';
+    $__['I18N_DIR_IS_INDEX']           = 'Index';
+    $__['I18N_DIR_NO_INDEX']           = '®iaden index';
+    $__['I18N_DIR_IN_MENU']            = 'Menu';
+    $__['I18N_DIR_IN_FOOTER']          = 'Pätièka';
+    $__['I18N_DIR_WITH_SELECTED']      = 'S vybranými';
+    $__['I18N_DIR_CONFIRM_DELETE']     = 'Chcete vymaza» &quot;<strong>%s</strong>&quot; adresár?';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_AUTH_HEAD_CHANGE'] = 'Zmeni» u¾ivateµa ...';
+    $__['I18N_AUTH_LOGIN_NAME']  = 'Prihlasovacie meno';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_ADMIN_MENU_LABEL_SETUP']     = 'Nastavenie';
+    $__['I18N_ADMIN_MENU_LABEL_STRUCT']    = 'Web ¹truktúra';
+    $__['I18N_ADMIN_MENU_LABEL_USER']      = 'U¾ivatelia';
+    $__['I18N_ADMIN_MENU_LABEL_GROUP']     = 'Skupiny';
+    $__['I18N_ADMIN_MENU_LABEL_CACHE']     = 'Vymaza» diskovú cache';
+    $__['I18N_ADMIN_MENU_LABEL_UPDATE']    = 'Aktualizácia softwaru';
+    $__['I18N_ADMIN_MENU_LABEL_FORUM']     = 'Údr¾ba fóra';
+    $__['I18N_ADMIN_MENU_LABEL_TRASH']     = 'Odpoadkový kô¹';
+    $__['I18N_ADMIN_MENU_LABEL_EXIT']      = 'Spä»';
+
+    $__['I18N_ADMIN_WEB_HEAD_MANAGE']      = 'Spravova» web ¹truktúru ...';
+    $__['I18N_ADMIN_WEB_HEAD_EDIT']        = 'Vytvori» alebo zmeni» web ¹truktúru ...';
+
+    $__['I18N_ADMIN_USER_HEAD_MANAGE']     = 'Správa u¼ivateµov ...';
+    $__['I18N_ADMIN_USER_HEAD_EDIT']       = 'Vytvori» alebo zmeni» u¾ivateµa ...';
+    $__['I18N_ADMIN_USER_HEAD_DELETE']     = 'Vymaza u¾ivateµa ...';
+    $__['I18N_ADMIN_USER_CONFIRM_DELETE']  = 'Chcete vymaza» u¼ivateµa &quot;<strong>%s</strong>&quot; (uid %s)?';
+
+    $__['I18N_ADMIN_GROUP_HEAD_MANAGE']    = 'Spravova» skupiny ...';
+    $__['I18N_ADMIN_GROUP_HEAD_EDIT']      = 'Vytvori» alebo zmeni» skupinu ...';
+    $__['I18N_ADMIN_GROUP_HEAD_DELETE']    = 'Zru¹i» skupinu ...';
+    $__['I18N_ADMIN_GROUP_CONFIRM_DELETE'] = 'Chcete vymaza» skupinu &quot;<strong>%s</strong>&quot; (gid %s)?';
+
+    $__['I18N_ADMIN_CACHE_HEAD_MANAGE']    = 'Správa cache ...';
+    $__['I18N_ADMIN_CACHE_HEAD_DELETE']    = 'Vymaza» cache ...';
+    $__['I18N_ADMIN_CACHE_CONFIRM_DELETE'] = 'Chcete vymaza» cache? Cache sa vytvorí opä».';
+
+    $__['I18N_ADMIN_FORUM_HEAD_MANAGE']    = 'Správa fóra ...';
+    $__['I18N_ADMIN_FORUM_HEAD_EDIT']      = 'Vytvori» alebo zmeni» fórum ...';
+
+    $__['I18N_ADMIN_TRASH_HEAD_MANAGE']    = 'Správa zmazaných dokumentov ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FILENAME']      = 'Meno';
+    $__['I18N_LAST_MODIFIED'] = 'Posledná zmena';
+    $__['I18N_FILESIZE']      = 'Veµkos»';
+    $__['I18N_BYTES']         = 'bytes';
+    $__['I18N_KILOBYTES']     = 'kilobytes';
+    $__['I18N_MEGABYTES']     = 'megabytes';
+    $__['I18N_GIGABYTES']     = 'gigabytes';
+    $__['I18N_TERABYTES']     = 'terabytes';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FRONT_USER_HEAD_DETAILS']     = 'Zmeni» detaily ...';
+    $__['I18N_DETAILS']                     = 'Detaily';
+    $__['I18N_LEAVE_BLANK_UNLESS_CHANGING'] = 'necha» prázdne dokým sa nezmení';
+
+?>

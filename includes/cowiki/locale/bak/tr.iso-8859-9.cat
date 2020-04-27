@@ -1,0 +1,280 @@
+<?php
+
+/*
+
+    Copyright (C) Daniel T. Gorski, <daniel.gorski@develnet.org>
+
+    $Id: tr.iso-8859-9.cat,v 1.5 2005/02/05 18:56:10 hakan76 Exp $
+
+    This file is part of coWiki. coWiki is free software under the terms of
+    the GNU General Public License (GPL). Read the LICENSE file. If you did
+    not receive a copy of the license and are not able to obtain it through
+    the internet, please send a note to <license@cowiki.org> so we can mail
+    you a copy immediately.
+
+    @purpose:   This is a language catalog file for i18n
+    @language:  Turkish (Türkçe)
+    @comments:  none
+    @date:      01. November 2002
+    @author:    Daniel T. Gorski <daniel.gorski@develnet.org>
+    @author:    Hakan Kuecuekyilmaz, <hakan at lisas dot de>, 2003-11-13
+
+*/
+
+    // --------------------------------------------------------------------
+    // Emacs: Options/Mule Select Input Method (turkish-postfix)
+    // Online Dictionary: http://www.hazar.com/
+
+    $__['I18N_CHARSET']      = 'ISO-8859-9';
+    $__['I18N_LOCALES']      = 'tr_TR, tr';
+    $__['I18N_DIRECTION']    = 'ltr';
+    $__['I18N_DATE_FORMAT']  = '%d %b %y';  // unsicher
+    $__['I18N_TIME_FORMAT']  = '%H:%M';
+    $__['I18N_TODAY']        = 'Bugün';
+    $__['I18N_YESTERDAY']    = 'Dün';
+    $__['I18N_PROCESSED_IN'] = 'Ýþlem %s saniye tutdu';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_YES']                 = 'Evet';
+    $__['I18N_NO']                  = 'Hayýr';
+    $__['I18N_OK']                  = 'OK';
+    $__['I18N_UP']                  = 'Yukarý';
+    $__['I18N_DOWN']                = 'Asaðý';
+    $__['I18N_LEFT']                = 'Sol';
+    $__['I18N_RIGHT']               = 'Sað';
+    $__['I18N_PREV']                = 'Önceki';
+    $__['I18N_NEXT']                = 'Sonraki';
+    $__['I18N_SAVE']                = 'Kayda geçir';
+    $__['I18N_DELETE']              = 'Sil';
+    $__['I18N_CANCEL']              = 'Ýptal et';
+    $__['I18N_EDIT']                = 'Düzenle';
+    $__['I18N_CHANGE']              = 'Deðiþtir';
+    $__['I18N_SELECT_ALL']          = 'Hepsini seç';
+    $__['I18N_RANGE']               = 'Bölge';
+    $__['I18N_REVERSE']             = 'Tersine çevir';
+    $__['I18N_MOVE']                = 'Taþý';
+    $__['I18N_SEND']                = 'Yolla';
+    $__['I18N_UPLOAD']              = 'Yukarý yükle';
+    $__['I18N_SHOW']                = 'Göster';
+    $__['I18N_CLOSE']               = 'Kapat';
+    $__['I18N_RESET']               = 'Sýfýrla';
+    $__['I18N_SEARCH']              = 'Ara';
+    $__['I18N_MORE']                = 'Daha';
+    $__['I18N_SEARCH_RESULT']       = 'Arama sonuçlarý';
+    $__['I18N_SEARCH_RESULT_FOR']   = 'Aranan';
+    $__['I18N_SEARCH_MATCHES']      = 'Bulunan Kayýt Sayýsý: %s';
+    $__['I18N_SEARCH_NO_RESULT']    = 'Yic birþey bulunmadý';
+    $__['I18N_JOIN']                = 'Katýl';
+    $__['I18N_REGISTER']            = 'Kayýt ol';
+    $__['I18N_HELP']                = 'Yardým';
+    $__['I18N_PREVIEW']             = 'Önýzleme';
+    $__['I18N_MANDANTORY']          = 'Zorunlu';
+    $__['I18N_ACCESS']              = 'Eriþim';
+    $__['I18N_CREATED']             = 'Yaratma Tarihi';
+    $__['I18N_MODIFIED']            = 'Deðiþtirme';
+    $__['I18N_MODIFIED_BY']         = 'Deðiþtiren';
+    $__['I18N_DELETED']             = 'Silinmiþ';
+    $__['I18N_OWNERSHIP']           = 'Sahip';
+    $__['I18N_LOGIN']               = 'Login';
+    $__['I18N_LOGOUT']              = 'Logout';
+    $__['I18N_PASSWORD']            = 'Parola';
+    $__['I18N_PASSWORD_IS_CRYPTED'] = 'Parola þifrelendirilmiþtir';
+    $__['I18N_NAME']                = 'Ýsim';
+    $__['I18N_DESCRIPTION']         = 'Taným';
+    $__['I18N_EMAIL']               = 'E-Mail';
+    $__['I18N_ACTIVE']              = 'Etkin';
+    $__['I18N_LOCKED']              = 'Kilitli';
+    $__['I18N_EXPIRES']             = 'Bitiþ tarihi';
+    $__['I18N_DATE']                = 'Tarih';
+    $__['I18N_TIME']                = 'Zaman';
+    $__['I18N_SORT']                = 'Sýra';
+    $__['I18N_ORDER']               = 'Sýra';
+    $__['I18N_REPLY']               = 'Yanýt';
+    $__['I18N_REPLIES']             = 'Yanýtlar';
+    $__['I18N_ERROR_STATUS']        = 'Durum';
+    $__['I18N_EMPTY_DIR']           = 'Boþ Dizin';
+    $__['I18N_PRINT_VERSION']       = 'Yazýcý Ýçin';
+    $__['I18N_ADMINISTRATION']      = 'Yönetim';
+    $__['I18N_OPTIONS']             = 'Seçenekler';
+    $__['I18N_PREFERENCES']         = 'Tercihler';
+    $__['I18N_COOKIES_REQUIRED']    = 'Cookies gerkiyor';
+    $__['I18N_LINKS']               = 'Baðlantýlar';
+    $__['I18N_DOCUMENT_URL']        = 'Belgenin URLi';
+    $__['I18N_REFERENCE']           = 'Referans';
+    $__['I18N_RECORD_DATA']         = 'Kayýt';
+    $__['I18N_AMBI_RESULT']         = 'Çapraþýk Sonuç';
+    $__['I18N_SIMI']                = 'Benser';
+    $__['I18N_SIMI_RESULT']         = 'Benseri Sonuçlar';
+    $__['I18N_REVISION']            = 'Yayýn';
+    $__['I18N_HOST']                = 'Host';
+    $__['I18N_IP']                  = 'ÝP';
+    $__['I18N_EDIT']                = 'Düzenlemek';
+    $__['I18N_DOC_NEW']             = 'Yeni Belge';
+    $__['I18N_DOC_VIEW']            = 'Belge Görünümü';
+    $__['I18N_DIR_NEW']             = 'Yeni Dizin';
+    $__['I18N_DIR_LIST']            = 'Dizini listesi';
+    $__['I18N_DIR_VIEW']            = 'Dizini göster';
+    $__['I18N_DIR_INDEX']           = 'Ýndeksi göster';
+    $__['I18N_USER_NEW']            = 'Yeni Kullanýcý';
+    $__['I18N_GROUP_NEW']           = 'Yený Grup';
+    $__['I18N_ADMIN']               = 'Yönetici';
+    $__['I18N_BACK']                = 'Geri';
+    $__['I18N_XML_SHOW']            = 'XML';
+    $__['I18N_HISTORY']             = 'Geçmiþi';
+    $__['I18N_VIEW']                = 'Göster';
+    $__['I18N_VIEWS']               = 'Görümleri';
+    $__['I18N_COMPARE']             = 'Karþýlaþtýr';
+    $__['I18N_COMPARISON']          = 'Karþýlaþtýrma';
+    $__['I18N_OLD']                 = 'Eski';
+    $__['I18N_DIFF']                = 'Diff';
+    $__['I18N_LEGEND']              = 'Gösterge';
+    $__['I18N_CHANGED']             = 'Deðýþti';
+    $__['I18N_ADDED']               = 'Eklendi';
+    $__['I18N_REMOVED']             = 'Silinmiþ';
+    $__['I18N_RECOVER']             = 'Kurtar';
+    $__['I18N_IDENTICAL']           = 'Özdeþ';
+    $__['I18N_DOC']                 = 'Belge';
+    $__['I18N_DIR']                 = 'Dizin';
+    $__['I18N_CURRENT']             = 'Geçerli';
+    $__['I18N_PARAMETER']           = 'Parametre';
+    $__['I18N_AVAIL_PLUGIN']        = 'Kullanýlabilen Pluginler';
+    $__['I18N_TEMPLATE']            = 'Þablon';
+    $__['I18N_LANGUAGE']            = 'Dil';
+    $__['I18N_FONT_FAMILY']         = 'Yazý Tipi';
+    $__['I18N_FONT_SIZE']           = 'Yazý Boyutu';
+    $__['I18N_FONT_ALIGN']          = 'Yazýtipi Hýzalama';
+    $__['I18N_FONT_ALIGN_NORMAL']   = 'Normal';
+    $__['I18N_FONT_ALIGN_JUSTIFY']  = 'Ýki yana yasla';
+    $__['I18N_SUBJECT']             = 'Konu';
+    $__['I18N_FROM']                = 'Gönderen';
+    $__['I18N_CONTENT']             = 'Ýçerik';
+    $__['I18N_MEDIACENTER']         = 'Media center';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_USER']          = 'Kullanýcý';
+    $__['I18N_GROUP']         = 'Grup';
+    $__['I18N_WORLD']         = 'Herkes';
+    $__['I18N_ACCESS_READ']   = 'Okuma';
+    $__['I18N_ACCESS_WRITE']  = 'Yazma';
+    $__['I18N_ACCESS_EXEC']   = 'Giriþ';
+    $__['I18N_USER_ID']       = 'Kullanýcý-Ýd';
+    $__['I18N_GROUP_DEFAULT'] = 'Ýlk Grup';
+    $__['I18N_GROUP_MEMBER']  = 'Ýlave Gruplar';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CURRENT_USER']   = 'Þimdiki Kullanýcý';
+    $__['I18N_ROOT_FULLNAME']  = 'coWiki Yönetici';
+    $__['I18N_GUEST_FULLNAME'] = 'Misafir';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_COM_THREADS']           = 'Haber Silsilesi';
+    $__['I18N_COM_COMMENTS']          = 'Yorumlar';
+    $__['I18N_COM_COMMENT']           = 'Yorum';
+    $__['I18N_COM_COMMENT_VIEW']      = 'Yorumlarý göster';
+    $__['I18N_COM_COMMENT_WRITE']     = 'Yorum yaz';
+    $__['I18N_COM_ATTRIBUTION']       = '%s de %s bunu yazdý:';
+    $__['I18N_COM_HEAD_CREATE_EDIT']  = 'Sizin Yorum ...';
+    $__['I18N_COM_IF_ANSWER_NOTIFY']  = 'Cevapda haber ver';
+    $__['I18N_COM_PREV_THREAD']       = 'Önceki Silsile';
+    $__['I18N_COM_NEXT_THREAD']       = 'Sonraki Silsile';
+    $__['I18N_COM_PREV_POSTING']      = 'Önceki ekleme';
+    $__['I18N_COM_NEXT_POSTING']      = 'Sonraki ekleme';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_SHOUTBOX'] = 'Shoutbox';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DOC_TOKEN']                    = '';
+    $__['I18N_DOC_CREATED']                  = 'yaratým';
+    $__['I18N_DOC_CHANGED']                  = 'deðiþtirilmiþ';
+    $__['I18N_DOC_DELETED_DOCUMENT']         = 'Silinmiþ Belge';
+    $__['I18N_DOC_UNRESOLVED_WEB_REFERENCE'] = 'Çözülmemiþ çapraz web referansý';
+    $__['I18N_DOC_HEAD_CREATE_EDIT']         = 'Belge yarat veya deðýþtir ...';
+    $__['I18N_DOC_HEAD_DELETE']              = 'Belgeyi sil ...';
+    $__['I18N_DOC_HEAD_RECOVER']             = 'Belgeyi kurtar ...';
+    $__['I18N_DOC_KEYWORDS']                 = 'Anahtar Sözcük';
+    $__['I18N_DOC_MINOR_CHANGE']             = 'Küçük deðýþtirme';
+    $__['I18N_DOC_ALLOW_COMMENTS']           = 'Yorumlan bilir';
+    $__['I18N_DOC_IF_CHANGED_NOTIFY']        = 'Deðýþtirmede haber ver';
+    $__['I18N_DOC_CONFIRM_DELETE']           = 'Belge &quot;<strong>%s</strong>&quot; silinsinmi?';
+
+    $__['I18N_DOC_HIST_HEAD']                = 'Belgenin geçmiþi ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DIR_TOKEN']              = '[dizin]';
+    $__['I18N_DIR_SELF']               = 'Þimdiki Dizin';
+    $__['I18N_DIR_PARENT']             = 'Ana Dizin';
+    $__['I18N_DIR_CONTENT_OF']         = '&quot;%s&quot; nýn içerik';
+    $__['I18N_DIR_HEAD_CREATE_EDIT']   = 'Dizin yarat veya deðýþtir ...';
+    $__['I18N_DIR_HEAD_SELECTED_MOVE'] = 'Seçili öðeleri taþý ...';
+    $__['I18N_DIR_HEAD_DELETE']        = 'Dizin sil ...';
+    $__['I18N_DIR_IS_INDEX']           = 'Ýndeks';
+    $__['I18N_DIR_NO_INDEX']           = 'Ýndeksis';
+    $__['I18N_DIR_IN_MENU']            = 'Menü';
+    $__['I18N_DIR_IN_FOOTER']          = 'Altlýk';
+    $__['I18N_DIR_WITH_SELECTED']      = 'Seçilen';
+    $__['I18N_DIR_CONFIRM_DELETE']     = 'Dizin &quot;<strong>%s</strong>&quot; silinsinmi?';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_AUTH_HEAD_CHANGE'] = 'Kullanýcýyý deðýþtir ...';
+    $__['I18N_AUTH_LOGIN_NAME']  = 'Kullanýcý';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_ADMIN_MENU_LABEL_SETUP']     = 'Kurulum';
+    $__['I18N_ADMIN_MENU_LABEL_STRUCT']    = 'Web yapýsý';
+    $__['I18N_ADMIN_MENU_LABEL_USER']      = 'Kullanýcý Yönetimi';
+    $__['I18N_ADMIN_MENU_LABEL_GROUP']     = 'Grup Yönetimi';
+    $__['I18N_ADMIN_MENU_LABEL_CACHE']     = 'Disk Önbelleki sil';
+    $__['I18N_ADMIN_MENU_LABEL_UPDATE']    = 'Yazýlýmý güncelleþtir';
+    $__['I18N_ADMIN_MENU_LABEL_FORUM']     = 'Forumu yönet';
+    $__['I18N_ADMIN_MENU_LABEL_TRASH']     = 'Çöp';
+    $__['I18N_ADMIN_MENU_LABEL_EXIT']      = 'Yönetimden çýk';
+
+    $__['I18N_ADMIN_WEB_HEAD_MANAGE']      = 'Web Dizin yapýsýný yönet ...';
+    $__['I18N_ADMIN_WEB_HEAD_EDIT']        = 'Dizin yarat veya deðýþtir ...';
+
+    $__['I18N_ADMIN_USER_HEAD_MANAGE']     = 'Kullanýcýlarý yönet ...';
+    $__['I18N_ADMIN_USER_HEAD_EDIT']       = 'Kullanýcý yarat veya deðýþtir ...';
+    $__['I18N_ADMIN_USER_HEAD_DELETE']     = 'Kullanýcý sil ...';
+    $__['I18N_ADMIN_USER_CONFIRM_DELETE']  = 'Kullanýcý &quot;<strong>%s</strong>&quot; (uid %s) silinsinmi?';
+
+    $__['I18N_ADMIN_GROUP_HEAD_MANAGE']    = 'Kullanýcý Gruplarýný yönet ...';
+    $__['I18N_ADMIN_GROUP_HEAD_EDIT']      = 'Kullanýcý Grup yarat veya sil ...';
+    $__['I18N_ADMIN_GROUP_HEAD_DELETE']    = 'Kullanýcý Grupunu sil ...';
+    $__['I18N_ADMIN_GROUP_CONFIRM_DELETE'] = 'Kullanýcý Grup &quot;<strong>%s</strong>&quot; (gid %s) silinsinmi?';
+
+    $__['I18N_ADMIN_CACHE_HEAD_MANAGE']    = 'Disk Önbelleki yönet ...';
+    $__['I18N_ADMIN_CACHE_HEAD_DELETE']    = 'Disk Önbelleki sil ...';
+    $__['I18N_ADMIN_CACHE_CONFIRM_DELETE'] = 'Disk Önbelleki silmek istiyormusunuz? Önbellek sonra adým adým yine kurulucak.';
+
+    $__['I18N_ADMIN_FORUM_HEAD_MANAGE']    = 'Forumlarý yönet ...';
+    $__['I18N_ADMIN_FORUM_HEAD_EDIT']      = 'Forum yarat veya deðiþtir ...';
+
+    $__['I18N_ADMIN_TRASH_HEAD_MANAGE']    = 'Silinmiþ Belgeleri yönet ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FILENAME']      = 'Dosya Adý';
+    $__['I18N_LAST_MODIFIED'] = 'Son Düzenleme Tarihi';
+    $__['I18N_FILESIZE']      = 'Alan Boyutu';
+    $__['I18N_BYTES']         = 'Bayt';
+    $__['I18N_KILOBYTES']     = 'Kilobayt';
+    $__['I18N_MEGABYTES']     = 'Megabayt';
+    $__['I18N_GIGABYTES']     = 'Gigabayt';
+    $__['I18N_TERABYTES']     = 'Terabayt';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FRONT_USER_HEAD_DETAILS']     = 'Kullanýcý ayrýntýlar yönet ...';
+    $__['I18N_DETAILS']                     = 'Ayrýntýlar';
+    $__['I18N_LEAVE_BLANK_UNLESS_CHANGING'] = 'Deðiþtirmek istemiyorsanýz boþ býrakýn';
+?>

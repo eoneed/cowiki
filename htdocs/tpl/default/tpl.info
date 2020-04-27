@@ -1,0 +1,17 @@
+;
+; coWiki template information file. Be careful with the format of this
+; file, PHP may perish unexpectedly. Keep the values in one line.
+;
+
+[TEMPLATE]
+    COWIKI_VERSION = "0.3.0"
+
+    NAME         = "Default"
+    DESCRIPTION  = "The original coWiki template theme"
+    VERSION      = "1.0"
+    UPDATED      = "28 December 2002"
+    COMMENT      = ""
+
+    AUTHOR_NAME  = "Daniel T. Gorski"
+    AUTHOR_EMAIL = "daniel.gorski@develnet.org"
+    AUTHOR_HOME  = "http://www.develnet.org/"

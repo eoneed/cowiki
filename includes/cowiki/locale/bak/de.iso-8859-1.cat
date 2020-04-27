@@ -1,0 +1,277 @@
+<?php
+
+/*
+
+    Copyright (C) Daniel T. Gorski, <daniel.gorski@develnet.org>
+
+    $Id: de.iso-8859-1.cat,v 1.34 2005/01/30 21:27:11 dgorski Exp $
+
+    This file is part of coWiki. coWiki is free software under the terms of
+    the GNU General Public License (GPL). Read the LICENSE file. If you did
+    not receive a copy of the license and are not able to obtain it through
+    the internet, please send a note to <license@cowiki.org> so we can mail
+    you a copy immediately.
+
+    @purpose:   This is a language catalog file for i18n
+    @language:  Deutsch (German)
+    @comments:  none
+    @date:      01. November 2002
+    @author:    Daniel T. Gorski <daniel.gorski@develnet.org>
+
+*/
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CHARSET']      = 'ISO-8859-15';
+    $__['I18N_LOCALES']      = 'de_DE, de';
+    $__['I18N_DIRECTION']    = 'ltr';
+    $__['I18N_DATE_FORMAT']  = '%d %b %y';
+    $__['I18N_TIME_FORMAT']  = '%H:%M';
+    $__['I18N_TODAY']        = 'heute';
+    $__['I18N_YESTERDAY']    = 'gestern';
+    $__['I18N_PROCESSED_IN'] = 'Verarbeitet in %s Sek.';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_YES']                 = 'Ja';
+    $__['I18N_NO']                  = 'Nein';
+    $__['I18N_OK']                  = 'OK';
+    $__['I18N_UP']                  = 'Hoch';
+    $__['I18N_DOWN']                = 'Runter';
+    $__['I18N_LEFT']                = 'Links';
+    $__['I18N_RIGHT']               = 'Rechts';
+    $__['I18N_PREV']                = 'Vorige';
+    $__['I18N_NEXT']                = 'Nächste';
+    $__['I18N_SAVE']                = 'Speichern';
+    $__['I18N_DELETE']              = 'Löschen';
+    $__['I18N_CANCEL']              = 'Abbrechen';
+    $__['I18N_EDIT']                = 'Editieren';
+    $__['I18N_CHANGE']              = 'Ändern';
+    $__['I18N_SELECT_ALL']          = 'Alle auswählen';
+    $__['I18N_RANGE']               = 'Bereich';
+    $__['I18N_REVERSE']             = 'Umkehren';
+    $__['I18N_MOVE']                = 'Verschieben';
+    $__['I18N_SEND']                = 'Absenden';
+    $__['I18N_UPLOAD']              = 'Hochladen';
+    $__['I18N_SHOW']                = 'Zeigen';
+    $__['I18N_CLOSE']               = 'Schliessen';
+    $__['I18N_RESET']               = 'Zurücksetzen';
+    $__['I18N_SEARCH']              = 'Suchen';
+    $__['I18N_MORE']                = 'Mehr';
+    $__['I18N_SEARCH_RESULT']       = 'Suchergebnis';
+    $__['I18N_SEARCH_RESULT_FOR']   = 'Suchergebnis für';
+    $__['I18N_SEARCH_MATCHES']      = '%s Treffer';
+    $__['I18N_SEARCH_NO_RESULT']    = 'Nichts gefunden';
+    $__['I18N_JOIN']                = 'Beitreten';
+    $__['I18N_REGISTER']            = 'Registrieren';
+    $__['I18N_HELP']                = 'Hilfe';
+    $__['I18N_PREVIEW']             = 'Vorschau';
+    $__['I18N_MANDANTORY']          = 'Obligatorisch';
+    $__['I18N_ACCESS']              = 'Zugriff';
+    $__['I18N_CREATED']             = 'Erstellt';
+    $__['I18N_MODIFIED']            = 'Geändert';
+    $__['I18N_MODIFIED_BY']         = 'Geändert von';
+    $__['I18N_DELETED']             = 'Gelöscht';
+    $__['I18N_OWNERSHIP']           = 'Eigentum';
+    $__['I18N_LOGIN']               = 'Login';
+    $__['I18N_LOGOUT']              = 'Logout';
+    $__['I18N_PASSWORD']            = 'Passwort';
+    $__['I18N_PASSWORD_IS_CRYPTED'] = 'Passwort bereits verschlüsselt';
+    $__['I18N_NAME']                = 'Name';
+    $__['I18N_DESCRIPTION']         = 'Beschreibung';
+    $__['I18N_EMAIL']               = 'E-Mail';
+    $__['I18N_ACTIVE']              = 'Aktiv';
+    $__['I18N_LOCKED']              = 'Gesperrt';
+    $__['I18N_EXPIRES']             = 'Läuft aus';
+    $__['I18N_DATE']                = 'Datum';
+    $__['I18N_TIME']                = 'Zeit';
+    $__['I18N_SORT']                = 'Sort.';
+    $__['I18N_ORDER']               = 'Reihenfolge';
+    $__['I18N_REPLY']               = 'Antworten';
+    $__['I18N_REPLIES']             = 'Antworten';
+    $__['I18N_ERROR_STATUS']        = 'Status';
+    $__['I18N_EMPTY_DIR']           = 'Leeres Verzeichnis';
+    $__['I18N_PRINT_VERSION']       = 'Druckversion';
+    $__['I18N_ADMINISTRATION']      = 'Administration';
+    $__['I18N_OPTIONS']             = 'Optionen';
+    $__['I18N_PREFERENCES']         = 'Voreinstellungen';
+    $__['I18N_COOKIES_REQUIRED']    = 'Permanente Cookies benötigt';
+    $__['I18N_LINKS']               = 'Links';
+    $__['I18N_DOCUMENT_URL']        = 'URL dieses Dokumentes';
+    $__['I18N_REFERENCE']           = 'Referenz';
+    $__['I18N_RECORD_DATA']         = 'Datensatz';
+    $__['I18N_AMBI_RESULT']         = 'Doppeldeutige Ergebnisse';
+    $__['I18N_SIMI']                = 'Ähnlich';
+    $__['I18N_SIMI_RESULT']         = 'Ähnliche Ergebnisse';
+    $__['I18N_REVISION']            = 'Rev.';
+    $__['I18N_HOST']                = 'Host';
+    $__['I18N_IP']                  = 'IP';
+    $__['I18N_EDIT']                = 'Editieren';
+    $__['I18N_DOC_NEW']             = 'Neues Dokument';
+    $__['I18N_DOC_VIEW']            = 'Dokumentansicht';
+    $__['I18N_DIR_NEW']             = 'Neues Verzeichnis';
+    $__['I18N_DIR_LIST']            = 'Verzeichnis anzeigen';
+    $__['I18N_DIR_VIEW']            = 'Verzeichnisansicht';
+    $__['I18N_DIR_INDEX']           = 'Index zeigen';
+    $__['I18N_USER_NEW']            = 'Neuer Benutzer';
+    $__['I18N_GROUP_NEW']           = 'Neue Gruppe';
+    $__['I18N_ADMIN']               = 'Admin';
+    $__['I18N_BACK']                = 'Zurück';
+    $__['I18N_XML_SHOW']            = 'XML';
+    $__['I18N_HISTORY']             = 'Historie';
+    $__['I18N_VIEW']                = 'Anzeigen';
+    $__['I18N_VIEWS']               = 'Zugriffe';
+    $__['I18N_COMPARE']             = 'Vergleichen';
+    $__['I18N_COMPARISON']          = 'Vergleich';
+    $__['I18N_OLD']                 = 'Alt';
+    $__['I18N_DIFF']                = 'Diff';
+    $__['I18N_LEGEND']              = 'Legende';
+    $__['I18N_CHANGED']             = 'Geändert';
+    $__['I18N_ADDED']               = 'Hinzugefügt';
+    $__['I18N_REMOVED']             = 'Entfernt';
+    $__['I18N_RECOVER']             = 'Herstellen';
+    $__['I18N_IDENTICAL']           = 'Identisch';
+    $__['I18N_DOC']                 = 'Dokument';
+    $__['I18N_DIR']                 = 'Verzeichnis';
+    $__['I18N_CURRENT']             = 'Aktuell';
+    $__['I18N_PARAMETER']           = 'Parameter';
+    $__['I18N_AVAIL_PLUGIN']        = 'Verfügbare Plugins';
+    $__['I18N_TEMPLATE']            = 'Vorlage';
+    $__['I18N_LANGUAGE']            = 'Sprache';
+    $__['I18N_FONT_FAMILY']         = 'Schriftart';
+    $__['I18N_FONT_SIZE']           = 'Schriftgrösse';
+    $__['I18N_FONT_ALIGN']          = 'Schriftausrichtung';
+    $__['I18N_FONT_ALIGN_NORMAL']   = 'Normal';
+    $__['I18N_FONT_ALIGN_JUSTIFY']  = 'Blocksatz';
+    $__['I18N_SUBJECT']             = 'Betreff';
+    $__['I18N_FROM']                = 'Von';
+    $__['I18N_CONTENT']             = 'Inhalt';
+    $__['I18N_MEDIACENTER']         = 'Media center';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_USER']          = 'Benutzer';
+    $__['I18N_GROUP']         = 'Gruppe';
+    $__['I18N_WORLD']         = 'Andere';
+    $__['I18N_ACCESS_READ']   = 'Lesen';
+    $__['I18N_ACCESS_WRITE']  = 'Schreiben';
+    $__['I18N_ACCESS_EXEC']   = 'Betreten';
+    $__['I18N_USER_ID']       = 'Benutzer-Id';
+    $__['I18N_GROUP_DEFAULT'] = 'Standardgruppe';
+    $__['I18N_GROUP_MEMBER']  = 'Zusatzgruppen';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_CURRENT_USER']   = 'Aktueller Benutzer';
+    $__['I18N_ROOT_FULLNAME']  = 'coWiki Admin';
+    $__['I18N_GUEST_FULLNAME'] = 'Gast';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_COM_THREADS']           = 'Threads';
+    $__['I18N_COM_COMMENTS']          = 'Kommentare';
+    $__['I18N_COM_COMMENT']           = 'Kommentar';
+    $__['I18N_COM_COMMENT_VIEW']      = 'Kommentare anzeigen';
+    $__['I18N_COM_COMMENT_WRITE']     = 'Kommentar schreiben';
+    $__['I18N_COM_ATTRIBUTION']       = 'Am %s schrieb %s:';
+    $__['I18N_COM_HEAD_CREATE_EDIT']  = 'Dein Kommentar ...';
+    $__['I18N_COM_IF_ANSWER_NOTIFY']  = 'Benachrichtigung bei Antwort';
+    $__['I18N_COM_PREV_THREAD']       = 'Voriger Thread';
+    $__['I18N_COM_NEXT_THREAD']       = 'Nächster Thread';
+    $__['I18N_COM_PREV_POSTING']      = 'Voriges Posting';
+    $__['I18N_COM_NEXT_POSTING']      = 'Nächstes Posting';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_SHOUTBOX'] = 'Shoutbox';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DOC_TOKEN']                    = '';
+    $__['I18N_DOC_CREATED']                  = 'erstellt';
+    $__['I18N_DOC_CHANGED']                  = 'geändert';
+    $__['I18N_DOC_DELETED_DOCUMENT']         = 'Deleted document';
+    $__['I18N_DOC_UNRESOLVED_WEB_REFERENCE'] = 'Unresolved cross web reference';
+    $__['I18N_DOC_HEAD_CREATE_EDIT']         = 'Dokument erstellen oder bearbeiten ...';
+    $__['I18N_DOC_HEAD_DELETE']              = 'Dokument löschen ...';
+    $__['I18N_DOC_HEAD_RECOVER']             = 'Dokument wiederherstellen ...';
+    $__['I18N_DOC_KEYWORDS']                 = 'Keywords';
+    $__['I18N_DOC_MINOR_CHANGE']             = 'Kleine Änderung';
+    $__['I18N_DOC_ALLOW_COMMENTS']           = 'Kommentierbar';
+    $__['I18N_DOC_IF_CHANGED_NOTIFY']        = 'Benachrichtigung bei Änderung';
+    $__['I18N_DOC_CONFIRM_DELETE']           = 'Möchten Sie das Dokument &quot;<strong>%s</strong>&quot; löschen?';
+
+    $__['I18N_DOC_HIST_HEAD']                = 'Dokumenthistorie ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_DIR_TOKEN']              = '[dir]';
+    $__['I18N_DIR_SELF']               = 'Aktuelles Verzeichnis';
+    $__['I18N_DIR_PARENT']             = 'Elternverzeichnis';
+    $__['I18N_DIR_CONTENT_OF']         = 'Inhalt von &quot;%s&quot;';
+    $__['I18N_DIR_HEAD_CREATE_EDIT']   = 'Verzeichnis erstellen oder bearbeiten ...';
+    $__['I18N_DIR_HEAD_SELECTED_MOVE'] = 'Ausgewählte Elemente verschieben nach ...';
+    $__['I18N_DIR_HEAD_DELETE']        = 'Verzeichnis löschen ...';
+    $__['I18N_DIR_IS_INDEX']           = 'Index';
+    $__['I18N_DIR_NO_INDEX']           = 'Kein index';
+    $__['I18N_DIR_IN_MENU']            = 'Menü';
+    $__['I18N_DIR_IN_FOOTER']          = 'Fuß';
+    $__['I18N_DIR_WITH_SELECTED']      = 'Die Auswahl';
+    $__['I18N_DIR_CONFIRM_DELETE']     = 'Möchten Sie das Verzeichnis &quot;<strong>%s</strong>&quot; löschen?';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_AUTH_HEAD_CHANGE'] = 'Benutzer ändern ...';
+    $__['I18N_AUTH_LOGIN_NAME']  = 'Loginname';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_ADMIN_MENU_LABEL_SETUP']     = 'Einstellungen';
+    $__['I18N_ADMIN_MENU_LABEL_STRUCT']    = 'Web Struktur';
+    $__['I18N_ADMIN_MENU_LABEL_USER']      = 'Benutzerverwaltung';
+    $__['I18N_ADMIN_MENU_LABEL_GROUP']     = 'Gruppenverwaltung';
+    $__['I18N_ADMIN_MENU_LABEL_CACHE']     = 'Plattencache löschen';
+    $__['I18N_ADMIN_MENU_LABEL_UPDATE']    = 'Software aktualisieren';
+    $__['I18N_ADMIN_MENU_LABEL_FORUM']     = 'Foren pflegen';
+    $__['I18N_ADMIN_MENU_LABEL_TRASH']     = 'Papierkorb';
+    $__['I18N_ADMIN_MENU_LABEL_EXIT']      = 'Administration verlassen';
+
+    $__['I18N_ADMIN_WEB_HEAD_MANAGE']      = 'Webverzeichnisstruktur verwalten ...';
+    $__['I18N_ADMIN_WEB_HEAD_EDIT']        = 'Verzeichnis erstellen oder bearbeiten ...';
+
+    $__['I18N_ADMIN_USER_HEAD_MANAGE']     = 'Benutzer verwalten ...';
+    $__['I18N_ADMIN_USER_HEAD_EDIT']       = 'Benutzer erstellen oder bearbeiten ...';
+    $__['I18N_ADMIN_USER_HEAD_DELETE']     = 'Benutzer löschen ...';
+    $__['I18N_ADMIN_USER_CONFIRM_DELETE']  = 'Möchten Sie den Benutzer &quot;<strong>%s</strong>&quot; (uid %s) löschen?';
+
+    $__['I18N_ADMIN_GROUP_HEAD_MANAGE']    = 'Benutzergruppen verwalten ...';
+    $__['I18N_ADMIN_GROUP_HEAD_EDIT']      = 'Benutzergruppe erstellen oder bearbeiten ...';
+    $__['I18N_ADMIN_GROUP_HEAD_DELETE']    = 'Benutzergruppe löschen ...';
+    $__['I18N_ADMIN_GROUP_CONFIRM_DELETE'] = 'Möchten Sie die Benutzergruppe &quot;<strong>%s</strong>&quot; (gid %s) löschen?';
+
+    $__['I18N_ADMIN_CACHE_HEAD_MANAGE']    = 'Zwischenspeicher verwalten ...';
+    $__['I18N_ADMIN_CACHE_HEAD_DELETE']    = 'Zwischenspeicher löschen ...';
+    $__['I18N_ADMIN_CACHE_CONFIRM_DELETE'] = 'Möchten Sie den Zwischenspeicher löschen? Dieser wird dann sukzessive wieder aufgebaut.';
+
+    $__['I18N_ADMIN_FORUM_HEAD_MANAGE']    = 'Foren pflegen ...';
+    $__['I18N_ADMIN_FORUM_HEAD_EDIT']      = 'Forum erstellen oder bearbeiten ...';
+
+    $__['I18N_ADMIN_TRASH_HEAD_MANAGE']    = 'gelöschte Dokumente verwalten ...';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FILENAME']      = 'Name';
+    $__['I18N_LAST_MODIFIED'] = 'zuletzt geändert';
+    $__['I18N_FILESIZE']      = 'Größe';
+    $__['I18N_BYTES']         = 'Bytes';
+    $__['I18N_KILOBYTES']     = 'Kilobytes';
+    $__['I18N_MEGABYTES']     = 'Megabytes';
+    $__['I18N_GIGABYTES']     = 'Gigabytes';
+    $__['I18N_TERABYTES']     = 'Terabytes';
+
+    // --------------------------------------------------------------------
+
+    $__['I18N_FRONT_USER_HEAD_DETAILS']     = 'Benutzerdetails ändern ...';
+    $__['I18N_DETAILS']                     = 'Details';
+    $__['I18N_LEAVE_BLANK_UNLESS_CHANGING'] = 'leer lassen um keine Veränderung vorzunehmen';
+?>

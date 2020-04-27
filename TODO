@@ -1,0 +1,63 @@
+coWiki todo list
+
+$Id: TODO,v 1.30 2004/01/29 00:01:26 fdomig Exp $
+
+Please remove finished jobs from this list. Update ChangeLog if necessary.
+Order of entries is not relevant in any way: things will be done if they
+make fun and time is left.
+
+---------------------------------------------------------------------------
+
+TODO:
+* In referrer plugin: get rid of session ids, rework it anyway
+* !!! Remove reference (&) return in Object::get() as it will lead to
+  unexpected results (eg. with object cloning). Test coWiki carefully then.
+* "Curare" template has no search input field
+* "Expand threads" button in comment overview
+* Fix GET processing for different instances of a single plugin (see
+  HttpResponse) ... HttpRequest has to be changed
+* Improve comments handling (take a look at the caching)
+* Edit->Preview
+* Edit page, a short info about the important format commands after the
+  input field
+* Backreferences of documents
+* Simplify template like the "diff" output ... to many nested tables slow
+  down the rendering
+* Check if ACLs (Access control lists) are possible
+* Check if merging of document revisions is possible
+* Ability for a user to change his own password
+* Ability to enter a crypted password for a new user
+* Ability to specify an uid (e.g. if a user has been deleted by accident)
+* Store node references (cowiki_node_ref)
+* Management of binaries (GIF, JPG, PDF, SWF etc.) with access restrictions
+* Add possibility to move documents and direcories around in a web (or
+  beyond?)
+* Parser/ReverseParser and Transformer modifications
+  * Add <dir> tag, which will produce a linked bullet list of the entries
+    in the directory the document is in
+  * Add #PROCESSING_INSTRUCTIONS like #REDIRECT, #DEPRECATED etc.
+* Complete documentation
+* Add the possibility to manage large documents with linked records
+* Improve XML pretty printer
+* Transformation of coWiki documents into PDF
+* Notifications (e.g. to the author or owner of a coWiki document) about
+  changes made by someone else
+* Sitemap generation
+* Database export/import features (e.g. for a backup)
+* Recursive chmod, chgrp
+* Intergration of the Mozilla Sidebar.
+* Rethink table locking in StorageMySQL
+ * Fix "transactions" in UserDAOMySQL
+* Document templates (administrable)
+* In document edit add: [x] remove double line feeds .. e.g. if one is
+  pasting text
+* Plugin embed: cache objects/images from foreign resources
+* target="_blank" necessary? Some people complained.
+* "Internal application programming interface" on develnet.org is crappy
+* Rethink core.conf identifiers, not END_NOINDEX, but NOINDEX_END and so on
+* %1..%9 instead of %s in I18N files
+* Umlauts in API docu?
+* "Remove <br>" button in document edit window?
+* Review kschroed's changes on the default template (spaces between HRs
+  and others, see http://www.develnet.org/133.html#A2)
+* Add a mail handler

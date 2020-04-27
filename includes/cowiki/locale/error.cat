@@ -1,0 +1,128 @@
+<?php
+
+/*
+
+    Copyright (C) Daniel T. Gorski, <daniel.gorski@develnet.org>
+
+    $Id: error.cat,v 1.18 2005/01/16 23:31:01 dgorski Exp $
+
+    This file is part of coWiki. coWiki is free software under the terms of
+    the GNU General Public License (GPL). Read the LICENSE file. If you did
+    not receive a copy of the license and are not able to obtain it through
+    the internet, please send a note to <license@cowiki.org> so we can mail
+    you a copy immediately.
+
+    @purpose:   This is the status code definition
+    @language:  English (en)
+    @comments:  Code families:
+                    100 - 199 Informational
+                    200 - 299 Successful
+                    300 - 399 Not used
+                    400 - 499 Client error
+                    500 - 599 Server error
+    @date:      01. November 2002
+    @author:    Daniel T. Gorski <daniel.gorski@develnet.org>
+
+*/
+
+    // --------------------------------------------------------------------
+
+    $__['0']   = 'Unknown error.';
+
+
+    // 100 - 199 Informational
+    $__['110'] = 'Program terminated.';
+    $__['111'] = 'Program resumed.';
+
+    $__['115'] = 'Login refused.';
+    $__['116'] = 'Account has expired.';
+    $__['117'] = 'Account is locked. Credentials rejected.';
+    $__['118'] = 'Account is not active. Credentials rejected.';
+
+    // 200 - 299 Success
+    $__['210'] = 'Task successfully completed.';
+
+    // 300 - 399 Plugin/Template error
+    $__['310'] = 'Internal plugin error.';
+    $__['311'] = 'Plugin not found.';
+    $__['312'] = 'Context interface mismatch.';
+    $__['313'] = 'Missing plugin parameter.';
+    $__['314'] = 'Malformed plugin parameter.';
+
+    $__['315'] = 'Foreign host not responding.';
+    $__['316'] = 'Format not supported.';
+
+    $__['317'] = 'Plugin warning.';
+
+    $__['320'] = 'Template not found.';
+    $__['321'] = 'Template syntax error.';
+    $__['322'] = 'Template variable is an array.';
+
+    $__['330'] = 'Plugin reflection not allowed.';
+
+
+    // 400 - 499 Client error
+    $__['403'] = 'Forbidden.';
+    $__['404'] = 'Not found.';
+
+    $__['410'] = 'Web not found.';
+    $__['411'] = 'Web already exists.';
+    $__['412'] = 'Missing web name.';
+
+    $__['420'] = 'Directory already exists (in this web).';
+    $__['421'] = 'Missing directory name.';
+    $__['422'] = 'Document already exists (in this web).';
+    $__['423'] = 'Missing document name.';
+    $__['424'] = 'Missing subject.';
+    $__['425'] = 'Missing content.';
+
+    $__['430'] = 'No items selected.';
+    $__['431'] = 'Can\'t delete. Directory is not empty.';
+    $__['432'] = 'Can\'t recover.';
+
+    $__['440'] = 'Resource has been changed meanwhile.';
+    $__['441'] = 'Data exceeds available space.';
+
+    $__['445'] = 'Unbalanced quotation ratio.';
+    $__['446'] = 'Broken quotation.';
+
+    $__['450'] = 'Unspecified form validation error.';
+    $__['451'] = 'Missing data.';
+    $__['452'] = 'Malformed email.';
+    $__['453'] = 'Date out of range.';
+    $__['454'] = 'Login already exists.';
+    $__['455'] = 'User id (uid) already exists.';
+    $__['456'] = 'Unsecure password.';
+    $__['457'] = 'Group name already exists.';
+    $__['458'] = 'Group id (gid) already exists.';
+
+    $__['459'] = 'Login required.';
+    $__['460'] = 'This option is not allowed for root.';
+
+    // 500 - 599 Server error
+    $__['510'] = 'File not found or not readable.';
+    $__['511'] = 'Directory not found or not readable.';
+    $__['512'] = 'File or directory not writeable.';
+
+    $__['515'] = 'Configuration file not found or not readable.';
+    $__['516'] = 'Missing main configuration directive or version mismatch.';
+
+    $__['530'] = 'Unsupported operating system.';
+    $__['531'] = 'PHP version too old.';
+    $__['532'] = 'PHP safe mode is on.';
+    $__['533'] = 'crypt() function not implemented.';
+    $__['534'] = 'Standard DES encryption not implemented.';
+    $__['535'] = 'Configuration mismatch.';
+
+    $__['540'] = 'Call to undefined PHP extension.';
+
+    $__['550'] = 'Unsupported storage service API.';
+    $__['551'] = 'Failed to connect storage service.';
+    $__['552'] = 'Unknown authentification service callback.';
+    $__['553'] = 'Failed to connect authentification service.';
+    $__['554'] = 'Unsupported user service API.';
+    $__['555'] = 'Failed to connect user service.';
+
+    $__['560'] = 'Illegal query error.';
+    $__['580'] = 'Extension "http" installed.';
+?>

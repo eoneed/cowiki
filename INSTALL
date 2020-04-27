@@ -1,0 +1,111 @@
+This file describes the installation procedure of coWiki. For further
+information refer to <http://www.cowiki.org/>.
+
+$Id: INSTALL,v 1.7 2005/01/16 23:56:00 dgorski Exp $
+
+Content
+
+* Requirements
+* Installation
+
+---------------------------------------------------------------------------
+
+* Requirements
+
+  * Unix or an unix-like operating system
+    - coWiki is meant to run on Unix/Linux or similar operating system.
+      It *might* run on Windows but it is not tested and currently not
+      supported.
+  * Apache 1.3.13 web server or later version
+  * MySQL 3.23.23 database or later version
+  * PHP 5.0.x or later version
+  * of course all together up and running
+
+---------------------------------------------------------------------------
+
+* Installation
+
+  * Unpack the cowiki-x.x.x.tar.gz file. You will find following
+    directories:
+
+      htdocs/
+      includes/
+      misc/
+
+  * Copy "htdocs/" and "includes/" to your virtual host location.
+
+    The "includes/" directory MUST NOT be read by an user agent (browser) -
+    it should reside outside the document root.
+
+  * Make sure to change owner and group of all files to fit your webserver
+    setup.
+
+  * Create a database table with your preferred name (e.g. "cowiki") and a
+    connector user with all rights granted to this database table. Reload
+    the database to apply your changes.
+
+  * Install the database using the appropriate "misc/database/*.sql" schema
+
+  * Make sure that PHPs "include_path" setting points to the "htdocs/" and
+    coWiki "includes/" directories. This could look like:
+
+      include_path = ".:../includes/cowiki"
+
+    The include path might be set in the webserver configuration file(s)
+    permanently (do not forget to restart the httpd after you have changed
+    its configuration) or in the "/htdocs/.htaccess" file.
+
+  * In your virtual host directory, change to "includes/cowiki/"
+    * copy the "core.conf-dist" file to "core.conf"
+    * edit the "core.conf" file and set the appropriate values. At least
+      set these values for the following directives:
+    
+      [.DOCUMENT]
+          RESOURCE = "..."
+
+      [.AUTH]
+          RESOURCE = "..."
+
+      [.USER]
+          RESOURCE = "..."
+
+      In a standard standalone installation, all three values for RESOURCE
+      are equal.
+
+    * Set an encrypted password for the coWiki administrator ("root" user)
+      in the [.AUTH] section.
+
+      ROOT_PASSWD = "..."
+
+      You may generate this encrypted password using a "crypt" or "htpasswd"
+      command or just let it generate through the "crypt.php" script comming
+      with your cowiki installation: <http://your.cowiki/crypt.php>. Do not
+      use the "crypt.php" script of foreign existing coWiki installations
+      on the net to encrypt your password.
+
+      With this new password you are able to change the current coWiki user
+      to the build-in user "root" with administrative privileges. It is
+      recommended to change the password periodically for security reasons.
+
+    * Depending on your server setup, you might want to adjust the paths
+      used by coWiki in the [PATH] section - e.g. where to store temporary
+      and cache files.
+
+  * In case that you are running PHP as DSO (module for apache): change the
+    access of the "core.conf" file to 0600 for the web server user id.
+
+  * In case that you are running PHP via CGI (standalone executable):
+    change the access of the "core.conf" file to 0600 for the user id the
+    CGI is running.
+
+  * After all, start your coWiki with <http://your.cowiki/>. If it doesn't
+    work, have a cup of tea and re-read the requirements and the
+    installation procedure.
+
+  * HINT: If coWiki does not work for you out of the box, please watch
+          the error.log of your virtual host where coWiki is located in:
+
+          tail -f /PATH/TO/YOUR/VHOST/logs/error.log
+          
+          Depending on your webserver configuration, you might find the
+          required data in the global webserver log file instead.
